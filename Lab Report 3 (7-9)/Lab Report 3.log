@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 OCT 2025 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 OCT 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 2 (4-6)/Lab Report 2.tex"
-(/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 2 (4-6)/Lab Report 2.tex
+**"/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)/Lab Report 3.tex"
+(/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)/Lab Report 3.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -285,7 +285,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip56
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 15.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -296,27 +296,27 @@ Package color Info: Driver file: pdftex.def on input line 149.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count313
 \l__pdf_internal_box=\box66
-) (./Lab Report 2.aux)
-\openout1 = `"Lab Report 2.aux"'.
+) (./Lab Report 3.aux)
+\openout1 = `"Lab Report 3.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count314
@@ -338,340 +338,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 15.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 14.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 15.
- (./Lab Report 2.out) (./Lab Report 2.out)
+Package hyperref Info: Link coloring OFF on input line 14.
+ (./Lab Report 3.out) (./Lab Report 3.out)
 \@outlinefile=\write3
-\openout3 = `"Lab Report 2.out"'.
+\openout3 = `"Lab Report 3.out"'.
 
-<4.1a.full.png, id=101, 803.0pt x 481.8pt>
-File: 4.1a.full.png Graphic file (type png)
-<use 4.1a.full.png>
-Package pdftex.def Info: 4.1a.full.png  used on input line 61.
-(pdftex.def)             Requested size: 110.40253pt x 66.23851pt.
-<4.1a.side1.png, id=103, 803.0pt x 481.8pt>
-File: 4.1a.side1.png Graphic file (type png)
-<use 4.1a.side1.png>
-Package pdftex.def Info: 4.1a.side1.png  used on input line 67.
-(pdftex.def)             Requested size: 110.40253pt x 66.23851pt.
-<4.1a.side2.png, id=104, 803.0pt x 481.8pt>
-File: 4.1a.side2.png Graphic file (type png)
-<use 4.1a.side2.png>
-Package pdftex.def Info: 4.1a.side2.png  used on input line 73.
-(pdftex.def)             Requested size: 110.40253pt x 66.23851pt.
 
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-
- []
-
-<4.1b.A.png, id=120, 803.0pt x 481.8pt>
-File: 4.1b.A.png Graphic file (type png)
-<use 4.1b.A.png>
-Package pdftex.def Info: 4.1b.A.png  used on input line 115.
-(pdftex.def)             Requested size: 165.59853pt x 99.35776pt.
-<4.1b.B.png, id=121, 803.0pt x 481.8pt>
-File: 4.1b.B.png Graphic file (type png)
-<use 4.1b.B.png>
-Package pdftex.def Info: 4.1b.B.png  used on input line 122.
-(pdftex.def)             Requested size: 165.59853pt x 99.35776pt.
-
-
-[2 <./4.1a.full.png> <./4.1a.side1.png> <./4.1a.side2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--161
-
- []
-
-<4.2.b.png, id=135, 803.0pt x 481.8pt>
-File: 4.2.b.png Graphic file (type png)
-<use 4.2.b.png>
-Package pdftex.def Info: 4.2.b.png  used on input line 164.
-(pdftex.def)             Requested size: 224.2479pt x 134.55019pt.
-
-
-[3 <./4.1b.A.png> <./4.1b.B.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 169--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--188
-
- []
-
-<4.2.e.png, id=146, 803.0pt x 481.8pt>
-File: 4.2.e.png Graphic file (type png)
-<use 4.2.e.png>
-Package pdftex.def Info: 4.2.e.png  used on input line 198.
-(pdftex.def)             Requested size: 224.2479pt x 134.55019pt.
-
-
-[4 <./4.2.b.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--208
-
- []
-
-<4.2eplot.png, id=155, 433.62pt x 289.08pt>
-File: 4.2eplot.png Graphic file (type png)
-<use 4.2eplot.png>
-Package pdftex.def Info: 4.2eplot.png  used on input line 226.
-(pdftex.def)             Requested size: 207.0021pt x 138.00253pt.
-
-
-[5 <./4.2.e.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 274--279
-
- []
-
-
-
-[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./4.2eplot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 297--301
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--305
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 330.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 330.
-
-
-
-[7]
-<5.2a.png, id=180, 433.62pt x 289.08pt>
-File: 5.2a.png Graphic file (type png)
-<use 5.2a.png>
-Package pdftex.def Info: 5.2a.png  used on input line 341.
-(pdftex.def)             Requested size: 258.75pt x 172.50978pt.
-<5.2b.png, id=182, 433.62pt x 289.08pt>
-File: 5.2b.png Graphic file (type png)
-<use 5.2b.png>
-Package pdftex.def Info: 5.2b.png  used on input line 354.
-(pdftex.def)             Requested size: 258.75pt x 172.50978pt.
-
-
-[8 <./5.2a.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 359--365
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--373
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 378.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 378.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 380--384
-
- []
-
-
-
-[9 <./5.2b.png>]
-<5.2c.png, id=199, 433.62pt x 289.08pt>
-File: 5.2c.png Graphic file (type png)
-<use 5.2c.png>
-Package pdftex.def Info: 5.2c.png  used on input line 403.
-(pdftex.def)             Requested size: 258.75pt x 172.50978pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--417
-
- []
-
-
-
-[10 <./5.2c.png>]
-<5.4.3.png, id=210, 803.0pt x 481.8pt>
-File: 5.4.3.png Graphic file (type png)
-<use 5.4.3.png>
-Package pdftex.def Info: 5.4.3.png  used on input line 482.
-(pdftex.def)             Requested size: 241.49895pt x 144.90134pt.
-
-
-[11]
-<5.4a.png, id=217, 433.62pt x 289.08pt>
-File: 5.4a.png Graphic file (type png)
-<use 5.4a.png>
-Package pdftex.def Info: 5.4a.png  used on input line 497.
-(pdftex.def)             Requested size: 241.49895pt x 161.00148pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--521
-
- []
-
-
-
-[12 <./5.4.3.png> <./5.4a.png>]
-<6.1a.png, id=227, 433.62pt x 289.08pt>
-File: 6.1a.png Graphic file (type png)
-<use 6.1a.png>
-Package pdftex.def Info: 6.1a.png  used on input line 529.
-(pdftex.def)             Requested size: 276.00105pt x 184.00926pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 551--554
-
- []
-
-
-
-[13 <./6.1a.png>]
-<6.1b.png, id=237, 433.62pt x 289.08pt>
-File: 6.1b.png Graphic file (type png)
-<use 6.1b.png>
-Package pdftex.def Info: 6.1b.png  used on input line 563.
-(pdftex.def)             Requested size: 276.00105pt x 184.00926pt.
-<6.2a.png, id=239, 433.62pt x 289.08pt>
-File: 6.2a.png Graphic file (type png)
-<use 6.2a.png>
-Package pdftex.def Info: 6.2a.png  used on input line 588.
-(pdftex.def)             Requested size: 276.00105pt x 184.00926pt.
-
-
-[14 <./6.1b.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 593--597
-
- []
-
-<6.2b.png, id=249, 433.62pt x 289.08pt>
-File: 6.2b.png Graphic file (type png)
-<use 6.2b.png>
-Package pdftex.def Info: 6.2b.png  used on input line 626.
-(pdftex.def)             Requested size: 276.00105pt x 184.00926pt.
-
-
-[15 <./6.2a.png>]
-<6.2c.png, id=260, 433.62pt x 289.08pt>
-File: 6.2c.png Graphic file (type png)
-<use 6.2c.png>
-Package pdftex.def Info: 6.2c.png  used on input line 644.
-(pdftex.def)             Requested size: 276.00105pt x 184.00926pt.
-
-
-[16 <./6.2b.png> <./6.2c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 679--684
-
- []
-
-
-
-[17]
-
-[18] (./Lab Report 2.aux)
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Lab Report 3.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `"Lab Report 2".out' has not changed.
-(rerunfilecheck)             Checksum: FD248EF7E6F08526E267A0E3E10EA851;4895.
+Package rerunfilecheck Info: File `"Lab Report 3".out' has not changed.
+(rerunfilecheck)             Checksum: A291330FD4237F20375BDA202DE18D4A;236.
  ) 
 Here is how much of TeX's memory you used:
- 14872 strings out of 473190
- 296465 string characters out of 5715801
- 664090 words of memory out of 5000000
- 37913 multiletter control sequences out of 15000+600000
- 565532 words of font info for 59 fonts, out of 8000000 for 9000
+ 14570 strings out of 473190
+ 291735 string characters out of 5715801
+ 652406 words of memory out of 5000000
+ 37701 multiletter control sequences out of 15000+600000
+ 563151 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,80p,515b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Lab Report 2.pdf" (18 pages, 595687 bytes).
+ 75i,6n,80p,315b,1020s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "Lab Report 3.pdf" (1 page, 42876 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
