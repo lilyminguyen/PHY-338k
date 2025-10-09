@@ -1,8 +1,8 @@
-PWD /Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)
+PWD /Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-8)
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)/Lab Report 3.tex
+INPUT /Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-8)/Lab Report 3.tex
 OUTPUT Lab Report 3.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls

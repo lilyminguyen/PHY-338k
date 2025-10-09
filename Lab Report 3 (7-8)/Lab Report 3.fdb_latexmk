@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760029102.13728 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)/Lab Report 3.tex" "Lab Report 3.pdf" "Lab Report 3" 1760029102.84563 0
-  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-9)/Lab Report 3.tex" 1760029101.95818 365 3a905c4ea3c52973a9f4d36618eeb232 ""
+["pdflatex"] 1760030794.66516 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-8)/Lab Report 3.tex" "Lab Report 3.pdf" "Lab Report 3" 1760030795.35483 0
+  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 3 (7-8)/Lab Report 3.tex" 1760030794.42884 846 183c625afa2d6ba649a309e50b519a3c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -80,9 +80,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Lab Report 3.aux" 1760029102.79759 472 392d1935631731f09233be44198a5377 "pdflatex"
-  "Lab Report 3.out" 1760029102.79807 236 a291330fd4237f20375bda202de18d4a "pdflatex"
-  "Lab Report 3.tex" 1760029101.95818 365 3a905c4ea3c52973a9f4d36618eeb232 ""
+  "Lab Report 3.aux" 1760030795.30844 528 d435a2fe1b499f11a61607d157c40b02 "pdflatex"
+  "Lab Report 3.out" 1760030795.30896 528 f3d204fceaa6efecc78cc2c36c0061bb "pdflatex"
+  "Lab Report 3.tex" 1760030794.42884 846 183c625afa2d6ba649a309e50b519a3c ""
   (generated)
   "Lab Report 3.aux"
   "Lab Report 3.log"
