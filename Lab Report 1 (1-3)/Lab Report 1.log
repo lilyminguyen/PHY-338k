@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 OCT 2025 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 OCT 2025 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,11 +542,8 @@ Package color Info: Driver file: pdftex.def on input line 149.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box66
-) (./Lab Report 1.aux
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
 )
+No file "Lab Report 1".aux.
 \openout1 = `"Lab Report 1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -565,7 +562,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 12.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 12.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+(/usr/local/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 12.
@@ -591,82 +588,166 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 12.
-<breadboard.png, id=1, 573.14125pt x 639.38875pt>
-File: breadboard.png Graphic file (type png)
-<use breadboard.png>
-Package pdftex.def Info: breadboard.png  used on input line 24.
-(pdftex.def)             Requested size: 137.9979pt x 153.94424pt.
+
+
+LaTeX Warning: File `breadboard.png' not found on input line 24.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:24: Package pdftex.def Error: File `breadboard.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...phics[width=0.4\textwidth]{breadboard.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./breadboard.png>]
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
+LaTeX Warning: File `"with terminator.png"' not found on input line 81.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:81: Package pdftex.def Error: File `with terminator.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 ...dth=0.47\textwidth]{"with terminator.png"}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `"without terminator.png"' not found on input line 83.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:83: Package pdftex.def Error: File `without terminator.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...=0.47\textwidth]{"without terminator.png"}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 
 [2]
-<with terminator.png, id=18, 3035.34pt x 2276.505pt>
-File: with terminator.png Graphic file (type png)
-<use with terminator.png>
-Package pdftex.def Info: with terminator.png  used on input line 81.
-(pdftex.def)             Requested size: 162.15042pt x 121.61292pt.
-<without terminator.png, id=20, 3035.34pt x 2276.505pt>
-File: without terminator.png Graphic file (type png)
-<use without terminator.png>
-Package pdftex.def Info: without terminator.png  used on input line 83.
-(pdftex.def)             Requested size: 162.15042pt x 121.61292pt.
-<circuit with terminator.png, id=21, 864.73062pt x 375.90437pt>
-File: circuit with terminator.png Graphic file (type png)
-<use circuit with terminator.png>
-Package pdftex.def Info: circuit with terminator.png  used on input line 95.
-(pdftex.def)             Requested size: 155.24895pt x 67.48778pt.
-<circuit without terminator.png, id=22, 731.73375pt x 294.60063pt>
-File: circuit without terminator.png Graphic file (type png)
-<use circuit without terminator.png>
-Package pdftex.def Info: circuit without terminator.png  used on input line 97.
-(pdftex.def)             Requested size: 155.24895pt x 62.50177pt.
+
+LaTeX Warning: File `circuit with terminator.png' not found on input line 95.
 
 
-[3 <./with terminator.png> <./without terminator.png> <./circuit with terminator.png> <./circuit without terminator.png>]
-<trigger level sketch.jpeg, id=28, 2150.0325pt x 579.16376pt>
-File: trigger level sketch.jpeg Graphic file (type jpg)
-<use trigger level sketch.jpeg>
-Package pdftex.def Info: trigger level sketch.jpeg  used on input line 109.
-(pdftex.def)             Requested size: 293.2521pt x 78.98792pt.
-<DC offset.png, id=29, 776.9025pt x 357.83687pt>
-File: DC offset.png Graphic file (type png)
-<use DC offset.png>
-Package pdftex.def Info: DC offset.png  used on input line 122.
-(pdftex.def)             Requested size: 172.5pt x 79.45055pt.
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:95: Package pdftex.def Error: File `circuit with terminator.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...45\textwidth]{circuit with terminator.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-[4 <./trigger level sketch.jpeg> <./DC offset.png>]
-<rise time.png, id=33, 4047.12pt x 3035.34pt>
+LaTeX Warning: File `circuit without terminator.png' not found on input line 97.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:97: Package pdftex.def Error: File `circuit without terminator.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...textwidth]{circuit without terminator.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[3]
+
+LaTeX Warning: File `trigger level sketch.jpeg' not found on input line 109.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:109: Package pdftex.def Error: File `trigger level sketch.jpeg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 ....85\textwidth]{trigger level sketch.jpeg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[4]
+
+LaTeX Warning: File `DC offset.png' not found on input line 122.
+
+
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:122: Package pdftex.def Error: File `DC offset.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...phics[width=0.5\textwidth]{DC offset.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[5]
+<rise time.png, id=30, 4047.12pt x 3035.34pt>
 File: rise time.png Graphic file (type png)
 <use rise time.png>
 Package pdftex.def Info: rise time.png  used on input line 172.
 (pdftex.def)             Requested size: 172.5pt x 129.35919pt.
 
 
-[5]
-<2-1a.png, id=40, 609.9588pt x 282.3348pt>
-File: 2-1a.png Graphic file (type png)
-<use 2-1a.png>
-Package pdftex.def Info: 2-1a.png  used on input line 197.
-(pdftex.def)             Requested size: 310.4979pt x 143.72603pt.
+[6 <./rise time.png>]
+
+LaTeX Warning: File `2-1a.png' not found on input line 197.
 
 
-[6 <./rise time.png> <./2-1a.png>]
+/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 1 (1-3)/Lab Report 1.tex:197: Package pdftex.def Error: File `2-1a.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 ...degraphics[width=0.9\textwidth]{2-1a.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
 
-[7{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[8{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
@@ -678,31 +759,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
 
 
-[8]
+[9]
 
-[9] (./Lab Report 1.aux)
+[10] (./Lab Report 1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8060 strings out of 473190
- 187840 string characters out of 5715801
- 540301 words of memory out of 5000000
- 31262 multiletter control sequences out of 15000+600000
- 565917 words of font info for 59 fonts, out of 8000000 for 9000
+ 8244 strings out of 473190
+ 193489 string characters out of 5715801
+ 540076 words of memory out of 5000000
+ 31447 multiletter control sequences out of 15000+600000
+ 566085 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,9n,80p,683b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Lab Report 1.pdf" (9 pages, 38334173 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Lab Report 1.pdf" (10 pages, 14628080 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
