@@ -17,45 +17,394 @@
 
 \section{Introduction}
 
+Labs ~7--8 of PHY 338k: Electronic Techniques explored further behavior and
+applications of operational amplifiers. Lab~7 focused on open-loop operation,
+inverting and summing amplifiers, and negative feedback controls. Lab~8
+focused on measurement of input offset voltage, op-amp integrator function, 
+and a battery-powered photodiode amplifier.
 
 \section{Lab 7: Operational Amplifiers I}
 
 \subsection{Open-loop op-amp, comparator}
 
-\textit{include copy of scope display of $V_\text{out}$ vs. $V_\text{in}$}\\
+We built the circuit in Figure VII-3 and found that it functions as an
+open-loop op-amp comparator. The input voltage $V_\text{in}(t)$ is a
+small-amplitude sine wave centered about zero and the output voltage
+$V_\text{out}(t)$ switches sharply between the maximum and minimum values
+where the input crosses zero.
 
-\noindent\textit{explain why linear gain region of op-amp (slope near $V_\text{in}=0$) does not play a role in this circuit}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{7.1a.png}
+    \caption{Oscilloscope display showing the open-loop op-amp acting as a 
+    comparator. CH1 is $V_\text{in}(t)$ and CH2 is $V_\text{out}(t)$.}
+    \label{fig:sine_comparator}
+\end{figure} 
 
-\noindent\textit{measure max and min output voltage, are these the same or diff than the supply voltages?}\\
+\noindent The linear gain region of the op-amp (the slope near $V_\text{in}=0$)
+is small and does not play a role in this circuit because the op-amp's
+open-loop gain is very large. Even a tiny input difference would drive the
+output to the supply rails, so the circuit would saturate immediately rather
+than operate linearly. Thus, this op-amp acts as a comparator rather than
+an amplifier.\\
 
-\noindent\textit{compare what you get to the maximum voltage swing shown on the spec sheet}\\
+\noindent We measured the output voltages to be $V_\text{OM}^+=13.9\si{\volt}$
+and $V_\text{OM}^-=-13.7\si{\volt}$, which are both slightly less than the
+$\pm15\si{\volt}$ supply rails. According to the LF411 datasheet, the typical
+maximum output swing under a $10\si{\kilo\ohm}$ load is $\pm13.5\si{\volt}$.
+Our values were consistent with the specifications, so we confirm the op-amp's
+performs as expected.\\
 
-\noindent\textit{measure the slew rate (clope of rise or fall of output waveform)}\\
+\noindent Next, we changed the input to be a $4.32\si{\volt}$ square wave and
+measured the slew rate of the op-amp using the rise time. The slew rate is the
+fastest rate at which its output voltage can change.
+\begin{equation}
+    \text{Slew rate}=\frac{\Delta V}{\Delta t}=\frac{27.6\si{\volt}}{2.1\si{\micro\second}}\approx13.1\si{\volt}/\si{\micro\second}
+\end{equation}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{7.1b.png}
+    \caption{Oscilloscope display of the input voltage (CH1) and output 
+    voltage (CH2) for an open-loop op-amp comparato with a square wave
+    input.}
+    \label{fig:square_comparator}
+\end{figure} 
 
+\noindent Our measured slew rate of approximately $13.1\si{\volt}/\si{\micro\second}$ 
+is close to the LF411 datasheet, which gives a typical slew rate of 
+$13\si{\volt}/\si{\micro\second}$.
 
 \subsection{Inverting amplifier}
 
-\textit{plot gain vs. f for both resistance ratios together on the same log-log plot}\\
+Next, we built the inverting amplifier circuit from Figure VII-4 using an LF411
+op-amp. For a gain of $-10$, we used $R_\text{in}=9.16\si{\kilo\ohm}$ and 
+$R_f=102.2\si{\kilo\ohm}$. For a gain of $-100$, we used $R_\text{in}=5.2\si{\kilo\ohm}$
+and $R_f=556\si{\kilo\ohm}$. For both setups, we used a grounding resistor $R_g=1.088\si{\kilo\ohm}$.\\
 
-\noindent\textit{extrapolate from the plot curves (can use hand ruler) to get a rough estimate of the open-loop gain as a function of frequency}\\
+\noindent We applied a sine wave input from $10$Hz to $1$MHz and measured the
+input and output voltages on the scope to calculate the gain at each frequency.
+Figure~\ref{fig:invert_amp} shows the gain vs. frequency on a log-log scale
+for both setups.
 
-\noindent\textit{use the 2 rules for an op-amp (given in manual) to explain/derive how the gain is produced for the inverting amplifier}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{7.2.a.png}
+    \caption{Plot of gain vs. frequency for resistance ratios of 10 and 100 on a log-log scale.}
+    \label{fig:invert_amp}
+\end{figure} 
 
+\noindent Fromm the roll-off points, we can estimate that the open-loop gain
+equals the closed-loop gain at the start of each drop. This would mean the 
+open-loop gain is about $10^5$ at $30$kHz and $10^4$ at $300$kHz. From these
+two points, we estimate that the open-loop gain decreases approximately to $\frac{1}{f}$,
+This is consistent with a gain-bandwidth product on the order of $10^6$Hz,
+which is expected for the LF411 op-amp.\\
+
+\noindent Assuming we have an ideal-opamp (no input current, $V_+=V_-$), the 
+inverting intput is at virtual ground. When we apply Ohm's law:
+\begin{align}
+    I_\text{in}&=\frac{V_\text{in}}{R_\text{in}}\\
+    I_f&=\frac{-V_\text{out}}{R_f}\\
+\end{align}
+\noindent setting $I_\text{in}=I_f$:
+
+\begin{equation}
+    \frac{V_\text{out}}{V_\text{in}}=\frac{-R_f}{R_\text{in}}
+\end{equation}
+\noindent which shows that the gain depends only on the resistor ratio and
+includes a $180^\circ$ phase shift.
 
 
 \subsection{Summing amplifier}
 
-\textit{report each voltage and resistor combination used along with the corresponding output voltage for each}\\
+Finally, we built a summing amplifier using the standard inverting amplifier
+configuation where the output voltage is:
+\begin{equation}
+    V_\text{out}=-R_f\left(\frac{V_1}{R_1} + \frac{V_2}{R_2} \right)
+\end{equation}
+We kept both input voltages constant at $V_1=V_2=+5\si{\volt}$ and varied the
+the resistor vaues to observe out $V_\text{out}$ depends on $R_1$, $R_2$, and 
+$R_f$. Our measured values are summarized in Table~\ref{tab:sumamp} below.
 
-\noindent\textit{use what you observed to determine an equation relating the input and output voltages to the 3 resistor values. Generalize this equation for $N$ inputs}
+\begin{table}[H]
+    \centering
+    \caption{Measured output voltage $V_\text{out}$ for various resistor combinations}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        $R_1$ ($\si{\kilo\ohm}$) & $R_2$ ($\si{\kilo\ohm}$) & $R_f$ ($\si{\kilo\ohm}$) & $V_\text{out}$ (V)\\
+        \hline
+        10.0 & 10.0 & 10.0 & -8.75\\
+        5.34 & 10.0 & 10.0 & -13.03\\
+        20.1 & 10.0 & 10.0 & -6.75\\
+        10.0 & 5.34 & 10.0 & -12.81\\
+        10.0 & 20.1 & 10.0 & -6.53\\
+        10.0 & 10.0 & 5.34 & -5.40\\
+        10.0 & 10.0 & 20.1 & -13.55\\
+        \hline
+    \end{tabular}
+    \label{tab:sumamp}
+\end{table}
 
+\noindent Our results were consistent with expected behavior. For example,
+increasing $R_f$ increased the magnitude of $V_\text{out}$, whereas increasing
+either $R_1$ or $R_2$ decreased their respective contribution of $V_1$ or $V_2$
+to the output.\\
+
+\noindent The general formula for an inverting summing amplifier with $N$ inputs is:
+\begin{equation}
+    V_\text{out}=-R_f\sum_{i=1}^N\frac{V_i}{R_i},
+\end{equation}
+\noindent which allows weighted contributions from each input voltage based on
+its resistor value.
 
 
 
 \section{Lab 8: Operational Amplifiers II}
 
+\subsection{Op-amp input offset}
 
+We built an inverting amplifier with a gain $G=-1000$ from Figure VIII-2 
+to measure the input offset voltage $V_\text{OS}$ of various op-amps. Since we
+grounded the input of the circuit ($V_\text{in}=0$), the output voltage we
+measured was entirely due to the internal input offset voltage of the op-amp.
+Using the gain formula $V_\text{out}=G\cdot V_\text{in}$, we substituted
+$V_\text{in}=V_\text{OS}$ to get:
+\begin{equation}
+    V_\text{OS}=\frac{V_\text{out}}{G}
+\end{equation}
+\noindent Table~\ref{tab:opamp_vos} summarizes our data and calculations.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+    \hline
+    Op-Amp Type & Measured $V_\text{out}$ (V) & Calculated $V_\text{OS}$ (mV) \\
+    \hline
+     & 0.497 & 0.497 \\
+    LF411 & 0.393 & 0.393 \\
+     & 1.124 & 1.124 \\
+    \hline
+     & 0.850 & 0.850 \\
+    LM741 & 0.480 & 0.480 \\
+     & 1.110 & 1.110 \\
+    \hline
+     & 0.163 & 0.163 \\
+    OPA227 & 0.145 & 0.145 \\
+     & 0.147 & 0.147 \\
+    \hline
+     & 0.153 & 0.153 \\
+    LTC1150 & 0.153 & 0.153 \\
+     & 0.159 & 0.159 \\
+    \hline
+    \end{tabular}
+    \caption{Measured output voltages and computed input offset voltages for various op-amps.}
+    \label{tab:opamp_vos}
+\end{table}
+
+\noindent The LF411 op-amps had input offset voltages ranging from $0.393$mV to
+$1.124$mV, which were within the datasheet's typical value of $0.8$mV and below
+the maximum of $2$mV with variation among individual devices. The LM741 op-amps
+had offsets between $0.480$mV and $1.110$mV, which were also within the expected
+datasheet range (typical $1$mV, maximum $5$mV).\\
+
+\noindent The OPA227 and LTC1150 are designed for extremely low offset voltages
+($10$µV and $0.5$µV typical), whereas our measured values were around $0.15$mV.
+This is much higher than expected and likely due to limitations in our setup,
+such as thermoelectric effects or noise. Thermoelectric potentials appear at 
+junctions between different metals when a temperature gradient is present and
+produces small voltage differences that are amplified significantly in 
+high-gain circuits such as this one.\\
+
+\noindent Overall, our measurements align with expected values for the LF411 and
+LM741, but not so much for the OPA227 and LTC1150 which had magnitudes lower expected
+values for the offset input voltage.
+
+\subsection{Op-amp integrator}
+
+We built the damped op-amp integrator circuit from Figure VIII-5 an observed
+its response to square, triangle, and sine wave inputs at $100$Hz and $1$kHz.
+We initially left $R_2$ in place and kept the switch open for this setup.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.100Hzsquare.png}
+        \caption{Square wave input}
+        \label{fig:square_100Hz}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.100Hztriangle.png}
+        \caption{Triangle wave input}
+        \label{fig:triangle_100Hz}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.100Hzsine.png}
+        \caption{Sine wave input}
+        \label{fig:sine_100Hz}
+    \end{subfigure}
+    \caption{Op-amp integrator waveforms for square, triangle, and sine inputs at $f=100$Hz
+    with $V_\text{in}$ (CH1) and $V_\text{out}$ (CH2).}
+    \label{fig:integrator_100Hz}
+\end{figure}
+
+\noindent At $100$Hz, the outputs behaved as expected for an ideal integrator.
+The square wave produced a triangular output, the triangle wave produced a
+parabolic output, and the sine wave showed a $90^\circ$ phase shift resembling
+a cosine. At $1$kHz, the output amplitudes decreased, which highlights the
+frequency-dependent gain of the integrator.\\
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.1kHzsquare.png}
+        \caption{Square wave input}
+        \label{fig:square_1kHz}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.1kHztriangle.png}
+        \caption{Triangle wave input}
+        \label{fig:triangle_1kHz}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.2.1kHzsine.png}
+        \caption{Sine wave input}
+        \label{fig:sine_1kHz}
+    \end{subfigure}
+    \caption{Op-amp integrator waveforms for square, triangle, and sine inputs at $f=1$kHz
+    with $V_\text{in}$ (CH1) and $V_\text{out}$ (CH2).}
+    \label{fig:integrator_1kHz}
+\end{figure}
+
+\noindent When we removed $R_2$, the output no longer leveled off cleanly in
+response to the square wave. The tops and bottoms of the waveform became 
+slanted rather than flat, which indicates the op-amp continued integrating
+any small DC offset. Originally, $R_2$ was included to limit DC gain
+and stabilize the output, so our observations make sense.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{8.2.r2removed.png}
+    \caption{Op-amp integrator waveform with $R_2$ removed. $V_\text{in}$ is CH1 and $V_\text{out}$ is CH2.}
+    \label{fig:r2_removed}
+\end{figure} 
+
+
+\noindent With a $10$kHz, $0.74$V square wave input, we found that closing 
+the switch caused the output to shift slightly upward and the amplitude to
+drop by about $0.2$V. The switch effectively resets the integrator by 
+discharging the capacitor, which clamps the integrator to a baseline voltage.\\
+
+\noindent The passive RC circuit from Lab 2 acts as a low-pass filter, but it
+can behave as an integrator when the input frequency is much higher than the
+circuit's cutoff frequency ($f_c=\frac{1}{2\pi RC}$). However, since it lacks
+the feedback mechanism present in the op-amp circuit, it only approximates the
+integration and only works under specific conditions.\\
+
+\noindent The op-amp integrator from this lab uses negative feedback to maintain
+a virtual ground at the inverting input, which allows it to integrate more 
+accurately over a wider range of frequencies, including lower ones. In contrast,
+if we operate the passive RC circuit below its cutoff frequency, it would behave
+more like a voltage divider and its output would not represent the integral of
+the input.\\
+
+\noindent Although both circuits have the same basic layout, they can be
+represented as low-pass filters. The op-amp integrator behaves like a true
+integrator when the input frequency is well below the cutoff freuqency
+$f_c=\frac{1}{2\pi RC}$. As the frequency approaches or exceeeds the cutoff,
+the circuit begins to attenuate the high-frequency components rather than
+integrate, so its behavior would better be described as that of a low-pass
+filter.
+
+\subsection{Battery-operated photodiode circuit}
+
+\subsubsection{Battery-powered photodiode amplifier}
+
+Lastly, we built the battery-powered photodiode amplifier from Figure VIII-7.
+We used a feedback resistor of $R=1.17\si{\mega\ohm}$, which makes the 
+transimpedance gain of this circuit:
+\begin{equation}
+    \text{Gain}=\frac{V_\text{out}}{I_\text{in}}=R=1.17\times 10^6\si{\ohm}
+\end{equation}
+\noindent We tested the circuit under four lighting conditions and recorded
+the output voltage using the oscilloscope:
+\begin{enumerate}
+    \item Light blocked: $V_\text{out}\approx0.72\si{\volt}$ (used as baseline)
+    \item Room light only: $V_\text{out}\approx4.08\si{\volt}$
+    \item Phone light at a distance: $V_\text{out}\approx 4.25\si{\volt}$
+    \item Phone light up close: $V_\text{out}\approx4.56\si{\volt}$
+\end{enumerate}
+\noindent As expected, the output voltage increased with light intensity. Our
+circuit remained stable and did not oscillate, so there was no need to add
+additional components such as a compensating capacitor.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.3.blocked.png}
+        \caption{Light blocked}
+        \label{fig:photodiode_blocked}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.3.roomlight.png}
+        \caption{Room light only}
+        \label{fig:photodiode_roomlight}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{8.3.phonelight.png}
+        \caption{Phone flashlight (close)}
+        \label{fig:photodiode_phonelight}
+    \end{subfigure}
+    \caption{Photodiode amplifier output under various lighting conditions. 
+    As expected, the output voltage increases with light intensity.}
+    \label{fig:photodiode}
+\end{figure}
+
+\noindent Using the photodiode's responsivity value of approximately $0.5$A/W,
+we estimated the minimum light power we can detect with our photodiode and
+circuit. The difference in $V_\text{out, min}$ from the blocked light to the room 
+light case was roughly:
+\begin{equation}
+    \Delta V=4.00-0.56=3.44\si{\volt}
+\end{equation}
+\noindent which corresponds to a photocurrent of:
+\begin{equation}
+    I=\frac{\Delta V}{R}=\frac{3.44}{1.17\times 10^6}\approx2.94\si{\micro\ampere}
+\end{equation}
+\noindent Using the responsivity:
+\begin{equation}
+    P=\frac{I}{0.5}\approx5.88\si{\micro\watt}
+\end{equation}
+
+\noindent So, the minimum light power we could detect was approximately $5.9$µW.\\
+
+\noindent For the brightest case (phone light up close, $V_\text{out}\approx4.56$V),
+assuming the baseline is still approximately $0.56$V, the change is:
+\begin{align}
+    \Delta V &= 4.56 - 0.56 = 4.00\si{\volt}\\
+    I&=\frac{4.00}{1.17\times10^6}\approx3.42\si{\micro\ampere}\\
+    P&=\frac{I}{0.5}\approx6.84\si{\micro\watt}
+\end{align}
+
+\noindent So, the maximum light power detected was approximately $6.8$µW.\\
+
+\noindent These values are reasonable for a small silicon photodiode in a
+low-power indoor setup. The amplifier's high gain enabled it to convert 
+the small changes in light intensity to measurable voltage changes.
+
+\section*{Conclusion}
+
+Labs~7--8 gave us practical insight into the versatility of op-amps in analog
+circuit design. We were able to demonstrate their use in signal processing and
+sensing along with a variety of other applications. Overall, these experiments
+reinforced the central role of op-amps as adaptable components in modern 
+electronics.
 
 \section*{Acknowledgements}
 
