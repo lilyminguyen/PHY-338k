@@ -3,10 +3,15 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{circuitikz}
-\usepackage{geometry}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{geometry} % move this above hyperref
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
 \geometry{letterpaper, margin=1in}
 
-\title{PHYS 338K Final Project Proposal: Op-Amp Based Function Generator}
+
+\title{PHY 338K Final Project Shopping Cart}
 \author{Anna Grove and Lily Nguyen \\ PHY 338K}
 \date{November 5, 2025}
 
@@ -16,10 +21,22 @@
 
 \section{Items}
 
-\begin{itemize}
+\noindent Parts can be located at \href{https://www.digikey.com/}{DigiKey Electronics} using the part numbers listed in Table~\ref{tab:parts_list}.
 
-    \item item 1
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|l|l|l|}
+        \hline
+        \textbf{Quantity} & \textbf{Item} & \textbf{Digi-Key Part Number} & \textbf{Manufacturer Product Number} \\
+        \hline
+        4 & LM741 & \href{https://www.digikey.com/en/products/detail/texas-instruments/LM741CN-NOPB/6322}{LM741CNNS/NOPB-ND} & LM741CN/NOPB \\
+        8 & 1N4148 & \href{https://www.digikey.com/en/products/detail/onsemi/1N4148/458603}{1N4148FS-ND} & 1N4148 \\
+        1 & A10303RNZQ & \href{https://www.digikey.com/en/products/detail/c-k/A10303RNZQ/2055100}{CKN9822-ND} & A10303RNZQ \\
+        \hline
+    \end{tabular}
+    \caption{List of components used in the project. Each part number links to its DigiKey page.}
+    \label{tab:parts_list}
+\end{table}
 
-\end{itemize}
 
 \end{document}
