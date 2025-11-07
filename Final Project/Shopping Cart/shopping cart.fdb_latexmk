@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1762542402.91103 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Shopping Cart/shopping cart.tex" "shopping cart.pdf" "shopping cart" 1762542403.59754 0
-  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Shopping Cart/shopping cart.tex" 1762542402.32165 2035 fc927fb46f4a31f7c6d90156c392faf4 ""
+["pdflatex"] 1762542447.3278 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Shopping Cart/shopping cart.tex" "shopping cart.pdf" "shopping cart" 1762542448.126 0
+  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Shopping Cart/shopping cart.tex" 1762542446.76612 2025 18f488812373970eef2b87d6aa4a1141 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -171,9 +171,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758629823 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "shopping cart.aux" 1762542403.55063 665 1b355a55f59b8316aa2124c7048c6cfd "pdflatex"
-  "shopping cart.out" 1762542403.55112 68 9bcfe3fa1ddafc2b0be4c75b0434a6c1 "pdflatex"
-  "shopping cart.tex" 1762542402.32165 2035 fc927fb46f4a31f7c6d90156c392faf4 ""
+  "shopping cart.aux" 1762542448.07255 665 1b355a55f59b8316aa2124c7048c6cfd "pdflatex"
+  "shopping cart.out" 1762542448.07302 68 9bcfe3fa1ddafc2b0be4c75b0434a6c1 "pdflatex"
+  "shopping cart.tex" 1762542446.76612 2025 18f488812373970eef2b87d6aa4a1141 ""
   (generated)
   "shopping cart.aux"
   "shopping cart.log"
