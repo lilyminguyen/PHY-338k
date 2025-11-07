@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 NOV 2025 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 NOV 2025 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,16 +618,16 @@ Package rerunfilecheck Info: File `"shopping cart".out' has not changed.
 Here is how much of TeX's memory you used:
  42890 strings out of 473190
  1060316 string characters out of 5715801
- 1645232 words of memory out of 5000000
+ 1647232 words of memory out of 5000000
  65743 multiletter control sequences out of 15000+600000
  564719 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,105p,509b,1018s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "shopping cart.pdf" (1 page, 83881 bytes).
+Output written on "shopping cart.pdf" (1 page, 84128 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
