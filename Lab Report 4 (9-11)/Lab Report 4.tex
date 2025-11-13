@@ -6,10 +6,13 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{hyperref}
+\usepackage{circuitikz}
 
 \title{PHY 338k Lab Report 4}
 \author{Lily Nguyen with Anna Grove}
-\date{Novemnbr 6, 2025}
+\date{November 6, 2025}
+
+% NOTE: check all logic input/output photos and make sure they match up with the dip switch configurations
 
 \begin{document}
 
@@ -23,69 +26,241 @@ Labs ~9--11 of PHY 338k: Electronic Techniques explores
 
 \subsection{Input logic signals and output signal measurement}
 
-\noindent \textit{Include your measurements of the voltage thresholds and a couple of photos
-of your logical voltage source being read out on the LEDs for different combinations of zeros
-and ones }
+To start, we built a logic voltage source using a DIP switch and pull-up
+resistors, then verified logic levels with the breadboard's logic monitor.
+To measure the logic thresholds, we lowered the input voltage until each
+channel's LED turned off. Our results are summarized in Table~\ref{tab:logic_thresh}.
+
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|}
+%         \hline
+%         Channel & Threshold (V) \\
+%         \hline
+%         1 & 1.15\\
+%         2 & 1.09\\
+%         3 & 1.04\\
+%         4 & 1.04\\
+%         \hline
+%     \end{tabular}
+%     \caption{Measured LED turn-off voltages for the four logic monitoring channels.}
+%     \label{tab:logic_thresh}
+% \end{table}
+
+\noindent Our measured values were reasonably close to the specified 
+1.4\si{\volt} threshold given by the PB-503.
+
+% ADD THIS BACK LATER, REMOVED TEMPORARILY TO SPEED UP COMPILING
+% \begin{figure}[H]
+%     \centering
+%     \begin{subfigure}[b]{0.27\linewidth}
+%         \includegraphics[width=\linewidth]{9.2a.1.png}
+%         \caption{Logic state: 1111}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.27\linewidth}
+%         \includegraphics[width=\linewidth]{9.2a.2.png}
+%         \caption{Logic state: 0100}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.27\linewidth}
+%         \includegraphics[width=\linewidth]{9.2a.3.png}
+%         \caption{Logic state: 0101}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.27\linewidth}
+%         \includegraphics[width=\linewidth]{9.2a.4.png}
+%         \caption{Logic state: 1100}
+%     \end{subfigure}
+%     \caption{Logic monitor output for various DIP switch configurations.}
+%     \label{fig:logic_monitor}
+% \end{figure}
 
 \subsection{Quad NAND gate}
 
-\noindent \textit{Measure the output of the NAND gate for all four possible input states 00, 01,
-10, and 11. Summarize your results with a truth table.
-Does it agree with what you expect?}\\
+We tested the 2-input NAND gate using both the 74HCT00N (CMOS) and 7400N (TTL)
+chips. Our measured outputs match what we would expect for a NAND gate, where
+it goes high for all inputs except 11.
 
-\noindent \textit{Finally, measure and report the actual output voltages of the NAND gate for all four states. You
-should find a result that is very typical for CMOS logic gates.}\\
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         Input & 74HCT00N V\textsubscript{out} (V) & 7400N V\textsubscript{out} (V) \\
+%         \hline
+%         00 & 4.98 & 3.45\\
+%         01 & 4.96 & 3.40\\
+%         10 & 4.95 & 3.42\\
+%         11 & 0.05 & 0.18\\
+%         \hline
+%     \end{tabular}
+%     \caption{Measured output voltages for the 2-input NAND gate.}
+%     \label{tab:two_nand}
+% \end{table}
 
-\noindent \textit{Repeat the steps you just did. Do you still get the same truth table,
-experimentally?}\\
-
-\noindent \textit{Is the output voltage for the TTL version of the gate the same as the CMOS
-version, or different?}
+\noindent As shown in Table~\ref{tab:two_nand}, the CMOS gate output swings nearly the
+full 0\si{\volt} to 5\si{\volt} range, whereas the TTL gate shows a lower high
+output at around 3.4\si{\volt}. This is what we expect since the CMOS uses active-pull 
+up that supports rail-to-rail output while TTL relies on bipolar transistors that 
+limit high-level swing.
 
 
 \subsection{NAND gate circuits}
 
 \subsubsection{NAND implementation of OR gate}
 
-\noindent \textit{Give your measured results in the form of a truth table.}
+Our experimental truth table in Table~\ref{tab:nand_or} confirms that the NAND 
+gate circuit correctly implements the OR function.
+
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         A & B & Output\\
+%         \hline
+%         0 & 0 & 0\\
+%         0 & 1 & 1\\
+%         1 & 0 & 1\\
+%         1 & 1 & 1\\
+%         \hline
+%     \end{tabular}
+%     \caption{Experimental truth table for NAND implementation of OR gate.}
+%     \label{tab:nand_or}
+% \end{table}
 
 \subsubsection{A four input NAND gate circuit}
 
-\textit{Give your measured results in the form of a truth table.}\\
+This circuit implements the logic function $Y=(A+B)+(C\cdot D)$, which outputs
+1 if either A or B is high, or if both C and D are high.
 
-\noindent \textit{Include a representative
-photo of the logic indicator output for one input example.}\\
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|c|c|}
+%         \hline
+%         A & B & C & D & Y\\
+%         \hline
+%         0 & 0 & 0 & 0 & 0\\
+%         0 & 0 & 0 & 1 & 0\\
+%         0 & 0 & 1 & 0 & 0\\
+%         0 & 0 & 1 & 1 & 1\\
+%         0 & 1 & 0 & 0 & 1\\
+%         0 & 1 & 0 & 1 & 1\\
+%         0 & 1 & 1 & 0 & 1\\
+%         0 & 1 & 1 & 1 & 1\\
+%         1 & 0 & 0 & 0 & 1\\
+%         1 & 0 & 0 & 1 & 1\\
+%         1 & 0 & 1 & 0 & 1\\
+%         1 & 0 & 1 & 1 & 1\\
+%         1 & 1 & 0 & 0 & 1\\
+%         1 & 1 & 0 & 1 & 1\\
+%         1 & 1 & 1 & 0 & 1\\
+%         1 & 1 & 1 & 1 & 1\\
+%         \hline
+%     \end{tabular}
+%     \caption{Experimental truth table for the four-input NAND gate circuit.}
+%     \label{tab:four_input_nand}
+% \end{table}
 
-\noindent \textit{What logic function does this circuit
-carry out?}
+\noindent The truth table we obtained matches with the expected behavior for
+this circuit layout.
+
+% ADD BACK LATER
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.55\textwidth]{9.4b.1.png}
+%     \caption{Logic monitor output for the input state 1010.}
+%     \label{fig:four_input_nand}
+% \end{figure}
+
+\noindent Figure~\ref{fig:four_input_nand} shows the output Y as high (1),
+which is consistent with the circuit's logic function.
+
 
 \subsection{CMOS logic gates from individual transistors}
 
 \subsubsection{Inverter with passive pull-up}
 
-\textit{Include a representative oscilloscope trace showing input and output at a low
-frequency and at a high frequency.}\\
+We built an inverter using an NMOS transistor and a passive pull-up resistor and drove
+it with a TTL square wave. Figure~\ref{fig:pp_inv} shows our inverter producing a logical
+low output when the input is high, and vice versa. 
 
-\noindent \textit{Give a qualitative description of the circuit behavior.}\\
+% ADD BACK LATER
+% \begin{figure}[H]
+%     \centering
+%     \begin{subfigure}[b]{0.49\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{9.5a.1.PNG}
+%         \caption{Low frequency input $f=106.2\si{\hertz}$}
+%         \label{fig:pp_inv_low}
+%     \end{subfigure}
+%     \begin{subfigure}[b]{0.49\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{9.5a.2.PNG}
+%         \caption{High frequency input $f=107.2\si{\kilo\hertz}$}
+%         \label{fig:pp_inv_high}
+%     \end{subfigure}
+%     \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
+%     \label{fig:pp_inv}
+% \end{figure}
 
-\noindent \textit{Also, measure the risetime and fall time of the circuit output and include the result in your report.}
+\noindent At low frequency, the output followed the expected inversion with symmetric rise 
+and fall times of $t_\text{rise}=25.59\si{\micro\second}$ and $t_\text{fall}=24.57\si{\micro\second}$, respecively.
+At high frequency, we obtained rise and fall times of $t_\text{rise}=1.997\si{\micro\second}$
+and $t_\text{fall}=192.8\si{\nano\second}$, respectively. We observed the rising edge become
+noticeably slower while the falling edge remains sharp. This behavior is due to the RC
+charging delay from the pull-up resistor, which limits the speed of rising transitions.
 
 
 \subsubsection{Inverter with active pull-up}
 
-\noindent \textit{Include a representative oscilloscope trace showing input and output at a low
-frequency and at a high frequency.}\\
+We built an inverter using NMOS and PMOS transistors in an active pull-up
+configuration and drove it with a TTL square wave. Again, our circuit correctly 
+acted as an inverter since the output is low when the input is high and vice versa. 
+The input (CH1, yellow) and output (CH2, blue) are shown in Figure~\ref{fig:ap_inv} 
+at both high and low frequencies.
 
-\noindent \textit{Give a qualitative description of the circuit behavior.}\\
+% ADD BACK LATER
+% \begin{figure}[H]
+%     \centering
+%     \begin{subfigure}[b]{0.49\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{9.5b.1.PNG}
+%         \caption{Low frequency input $f=101.4\si{\hertz}$}
+%         \label{fig:ap_inv_low}
+%     \end{subfigure}
+%     \begin{subfigure}[b]{0.49\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{9.5b.2.PNG}
+%         \caption{High frequency input $f=102.0\si{\kilo\hertz}$}
+%         \label{fig:ap_inv_high}
+%     \end{subfigure}
+%     \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
+%     \label{fig:ap_inv}
+% \end{figure}
 
-\noindent \textit{Also, measure the risetime and fall time of the circuit output and include the result in your report.}\\
+\noindent At low frequency, the inverter behaved as expected with symmetrical rise and 
+fall times of around $t_\text{rise}=26.62\si{\micro\second}$ and $t_\text{fall}=25.60\si{\micro\second}$,
+respectively. At high frequency, both transitions remained relatively sharp, with
+significantly faster rise and fall times of $t_\text{rise}=177.1\si{\nano\second}$
+and $t_\text{fall}=199.9\si{\nano\second}$, respectively.\\
 
-\noindent \textit{What are the main differences between the circuit with active pull-up and the circuit with passive pull-
-up. Explain why these differences occur. This provides one of the main reasons that essentially
-all logic circuits use active pull-up.}
+\noindent Unlike the passive pull-up configuration, the rising edge of the
+output does not break down at high frequencies since the PMOS transistor
+actively sources current to drive the output high while the NMOS pulls it low.
+In contrast, the passive pull-up relies on a resistor, which results in slower
+RC-limited charging. This improvement in switching speed explains why nearly all
+logic circuits use active pull-up design.
 
 
 \subsubsection{CMOS NAND gate constructed from individual transistors}
+
+%-----------------------------------
+NOTE: FINISH UP THIS PART LATER!!!
+%-----------------------------------
 
 \textit{Show the circuit diagram your used with just the CD4007 pins and your external
 connections, and also another diagram showing the complete circuit with the individual transistor
@@ -93,7 +268,23 @@ connections.}\\
 
 \noindent \textit{Also show the CD4007 pins on the second diagram.}\\
 
-\noindent \textit{Show your result for the experimental truth table that you produced with your circuit.}
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         A & B & Output\\
+%         \hline
+%         0 & 0 & 1\\
+%         0 & 1 & 1\\
+%         1 & 0 & 1\\
+%         1 & 1 & 0\\
+%         \hline
+%     \end{tabular}
+%     \caption{Experimental truth table for the CD4007 CMOS NAND gate.}
+%     \label{tab:cmos_nand}
+% \end{table}
+
 
 
 \section{Lab 10: Flip-Flops and Sequential Logic}
@@ -102,15 +293,60 @@ connections.}\\
 
 \subsubsection{Asynchronous SR flip-flop}
 
-\noindent \textit{Verify the functions of the R and S inputs}\\
+We tested the SR flip-flop by applying a sequency of $S$ and $R$ inputs. Our
+circuit correctly set ($S=0,R=1$), reset ($S=1,R=0$), and held its state when
+both inputs were high. When both inputs were low ($S=0,R=0$), the circuit
+entered an invalid state with undefined outputs, which confirmed that this
+condition should be avoided. Our trial results are summarized in Table~\ref{tab:asynch_flipflop}
 
-\noindent \textit{Report the sequence of R and S values that you used along with the outputs Q and Q-bar. The sequence should include enough steps to fully test the operatoin of the flip-flop including its ability to hold the output for certain changes in R and S.}
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|c|l|}
+%     \hline
+%     Step & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
+%     \hline
+%     1 & 0 & 1 & 1 & 0 & Set \\
+%     2 & 1 & 1 & 1 & 0 & Hold previous state (Q = 1) \\
+%     3 & 1 & 0 & 0 & 1 & Reset \\
+%     4 & 1 & 1 & 0 & 1 & Hold previous state (Q = 0) \\
+%     5 & 0 & 1 & 1 & 0 & Set \\
+%     6 & 1 & 1 & 1 & 0 & Hold \\
+%     7 & 0 & 0 & ? & ? & Invalid (forbidden state) \\
+%     \hline
+%     \end{tabular}
+%     \caption{Test sequence for asynchronous SR flip-flop.}
+%     \label{tab:asynch_flipflop}
+% \end{table}
 
 
 \subsubsection{Clocked SR flip-flop}
 
-\noindent \textit{Report the sequency of R, A, and CLK values you used alon with the outputs Q and Q-bar. Your sequence should include enough steps to fully test the operation of the flip-flop.}
+Next, we tested the clocked SR flip-flop by applying various combinations of S, R, and CLK.
+When CLK was low, the output held its previous state regardless of inputs, and 
+when it was high, the circuit performed set and reset functions as expected.
+There was an invalid state when both S and R were low during a high CLK input,
+which gave us undefined outputs. Our results are summarized in Table~\ref{tab:clocked_sr}.
 
+% ADD BACK LATER
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|c|c|l|}
+%     \hline
+%     Step & CLK & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
+%     \hline
+%     1 & 0 & 0 & 1 & - & - & Clock low, hold previous state \\
+%     2 & 1 & 0 & 1 & 1 & 0 & Clock high, set \\
+%     3 & 0 & 1 & 1 & 1 & 0 & Clock low, hold \\
+%     4 & 1 & 1 & 0 & 0 & 1 & Clock high, reset \\
+%     5 & 1 & 1 & 1 & 0 & 1 & Clock and both inputs high, hold \\
+%     6 & 0 & 0 & 1 & 0 & 1 & Clock low, hold \\
+%     7 & 1 & 0 & 0 & ? & ? & Clock high, invalid input \\
+%     \hline
+%     \end{tabular}
+%     \caption{Test sequence for clocked SR flip-flop.}
+%     \label{tab:clocked_sr}
+% \end{table}
 
 
 \subsection{D-type flip-flop}
@@ -118,12 +354,17 @@ connections.}\\
 
 \subsubsection{D-type flip-flop operation}
 
-\noindent \textit{Check the operation of the flip-flop by verifying that the D-input appears on the Q-output when and only when clocked.}\\
+We tested the functionality of the D-type flip-flop by connecting a slide 
+switch to the D input and using a debounced pushbutton switch to provide the
+clock signal. As expected, the output Q updated to match the value of D only
+on the rising edge of the clock, so we confirm that the flip-flop is positive-
+edge triggered.\\
 
-\noindent \textit{Assert (pull low) SET and report what happens.}\\
-
-\noindent \textit{Assert (pull low) RESET and report what happens.}
-
+\noindent We also teseted the asynchronous inputs. Pulling the SET input low
+immediately forced Q high regardless of the clock or D input. Similarly, pulling
+the RESET input low forced Q to low. Both inputs operated asynchronously and
+overrode the normal clock behavior. After releasing, the flip-flop went back to
+regular edge-triggered operation.
 
 
 \subsubsection{Flip-flop with feedback}
@@ -136,6 +377,16 @@ connections.}\\
 
 \noindent \textit{Why is this relevant given the feedback connection from Q-bar to D?}
 
+We connected the D flip-flop in a feedback configuration by wiring $\overline{Q}$
+to the D input. The output Q alternated between 0 and 1 with each clock pulse
+when we clocked it manually using a pushbutton. Thus, we confirm that our flip-flop
+circuit acts as a divide-by-2 frequency divider since Q toggles on every risinge
+edge.\\
+
+\noindent \dots
+
+\noindent The propa
+
 
 \subsubsection{Cascaded flip-flops}
 
@@ -146,7 +397,7 @@ connections.}\\
 
 \noindent \textit{Using the scope, observe the IN and Q output of the first flip-flop. Why the jitter?}\\
 
-\noindent \textit{Next, watch the output Q2 along with IN. Repeast for Q3 and Q4. What is the circuit doing?}
+\noindent \textit{Next, watch the output Q2 along with IN. Repeat for Q3 and Q4. What is the circuit doing?}
 
 
 
