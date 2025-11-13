@@ -102,22 +102,98 @@ connections.}\\
 
 \subsubsection{Asynchronous SR flip-flop}
 
+\noindent \textit{Verify the functions of the R and S inputs}\\
+
+\noindent \textit{Report the sequence of R and S values that you used along with the outputs Q and Q-bar. The sequence should include enough steps to fully test the operatoin of the flip-flop including its ability to hold the output for certain changes in R and S.}
+
+
 \subsubsection{Clocked SR flip-flop}
+
+\noindent \textit{Report the sequency of R, A, and CLK values you used alon with the outputs Q and Q-bar. Your sequence should include enough steps to fully test the operation of the flip-flop.}
+
 
 
 \subsection{D-type flip-flop}
 
+
 \subsubsection{D-type flip-flop operation}
+
+\noindent \textit{Check the operation of the flip-flop by verifying that the D-input appears on the Q-output when and only when clocked.}\\
+
+\noindent \textit{Assert (pull low) SET and report what happens.}\\
+
+\noindent \textit{Assert (pull low) RESET and report what happens.}
+
+
 
 \subsubsection{Flip-flop with feedback}
 
+\noindent \textit{Clock the circuit manually and observe the output.}\\
+
+\noindent \textit{Watch the Clock input and the Q output on an oscilloscope. What is the circuit doing?}\\
+
+\noindent \textit{Turn the frequency up and measure the propagation delay of the circuit.}\\
+
+\noindent \textit{Why is this relevant given the feedback connection from Q-bar to D?}
+
+
 \subsubsection{Cascaded flip-flops}
+
+\noindent \textit{Using the function generator as the clock input for U1, observe and record the Q output of U2.}
+
 
 \subsubsection{Shift register}
 
+\noindent \textit{Using the scope, observe the IN and Q output of the first flip-flop. Why the jitter?}\\
+
+\noindent \textit{Next, watch the output Q2 along with IN. Repeast for Q3 and Q4. What is the circuit doing?}
 
 
-\section{Lab 11: Digital Circuits III}
+
+
+\section{Lab 11: Microcontroller Applications}
+
+
+\subsection{Getting started with the Arduino IDE}
+
+\noindent \textit{You should now see the program running your Arduino, i.e. you should see the LED on the board blinking on and off}\\
+
+\noindent \textit{You should now see the LED blinking with your new time periods.}
+
+
+\subsection{Connecting a display}
+
+\noindent \textit{Get the output text on the display}\\
+
+\noindent \textit{Change the program to output a few of your favorite words and verify that these new words are output on the display.}
+
+
+\subsection{Measuring an analog voltage}
+
+\noindent \textit{Verify that the signal is the same as what you see on the oscilloscope}\\
+
+*aliasing - occurs due to periodic sampling of a periodic wave\\
+
+\noindent \textit{At about what frequency does the display fail to keep up with the input sine wave?}\\
+
+\noindent \textit{See if you can get the Arduino to record a faster sine wave. Verify that you can now see a faster sine wave on the display.}\\
+
+\noindent \textit{What's the fastest sine wave that you can faithfully record now?}
+
+
+\subsection{Digital PID control loop}
+
+\noindent \textit{Open a serial plotter window with the baud rate to 9600 and view the resulting voltages}\\
+
+\noindent \textit{You should see the voltage drop to zero for a period of time, after which the feedback loop kicks in. What happens as the feedback tries to stabilize the voltage to the set-point?}\\
+
+\noindent \textit{Using the oscilloscope, observe the direct digital output at I/O pin 6, and also view the filtered output.}\\
+
+\noindent \textit{comment on how effective the filter is at removing the PWM from the output}\\
+
+\noindent \textit{Try changing the parameters kp, ki, and kd to see what happens.}\\
+
+\noindent \textit{Record what happens for some representative set of parameters. What parameters cause the voltage to converge most quickly to the setpoint? Under what conditions is the voltage vs. time more stable? Less stable? Completely unstable?}
 
 
 
