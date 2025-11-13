@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 NOV 2025 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  12 NOV 2025 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,13 +426,13 @@ Package rerunfilecheck Info: File `"Lab Report 4".out' has not changed.
 Here is how much of TeX's memory you used:
  14615 strings out of 473190
  292467 string characters out of 5715801
- 658406 words of memory out of 5000000
+ 658407 words of memory out of 5000000
  37722 multiletter control sequences out of 15000+600000
  564112 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,80p,480b,1023s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Lab Report 4.pdf" (3 pages, 103290 bytes).
+Output written on "Lab Report 4.pdf" (3 pages, 103289 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
