@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1763113085.6553 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 4 (9-11)/Lab Report 4.tex" "Lab Report 4.pdf" "Lab Report 4" 1763113098.22027 0
-  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 4 (9-11)/Lab Report 4.tex" 1763113074.24172 25785 ee78953d0a01c0e942b1df19c56ff069 ""
+["pdflatex"] 1763113912.83253 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 4 (9-11)/Lab Report 4.tex" "Lab Report 4.pdf" "Lab Report 4" 1763113925.12217 0
+  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Lab Report 4 (9-11)/Lab Report 4.tex" 1763113894.98828 25613 76c445a1f1fcd804126d252fc2fdf73b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -125,9 +125,9 @@
   "9.5a.2.PNG" 1763020913.77211 29749 7eabd21fb834a48348b8b364830ca5ec ""
   "9.5b.1.PNG" 1763022058.88611 29389 c29fcad638684d1337aeff418e178af6 ""
   "9.5b.2.PNG" 1763022058.9029 28664 4e8870a52ae485888b62f92333c1e440 ""
-  "Lab Report 4.aux" 1763113098.13145 13954 3f09de7fb0ab53f56932dbc18e9e8080 "pdflatex"
-  "Lab Report 4.out" 1763113098.13272 5163 ead8175919813efd98ceca0ebcdb2278 "pdflatex"
-  "Lab Report 4.tex" 1763113074.24172 25785 ee78953d0a01c0e942b1df19c56ff069 ""
+  "Lab Report 4.aux" 1763113925.01743 13951 db3d777b215a71c2031b58f9b7702bc6 "pdflatex"
+  "Lab Report 4.out" 1763113925.01839 5163 ead8175919813efd98ceca0ebcdb2278 "pdflatex"
+  "Lab Report 4.tex" 1763113894.98828 25613 76c445a1f1fcd804126d252fc2fdf73b ""
   (generated)
   "Lab Report 4.aux"
   "Lab Report 4.log"

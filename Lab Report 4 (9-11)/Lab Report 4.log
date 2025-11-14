@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 NOV 2025 03:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 NOV 2025 03:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -285,7 +285,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip56
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -299,24 +299,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./Lab Report 4.aux)
 \openout1 = `"Lab Report 4.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count314
@@ -338,217 +338,214 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 16.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 14.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 14.
  (./Lab Report 4.out) (./Lab Report 4.out)
 \@outlinefile=\write3
 \openout3 = `"Lab Report 4.out"'.
 
 
-Overfull \hbox (4.05504pt too wide) in paragraph at lines 22--27
+Overfull \hbox (4.05504pt too wide) in paragraph at lines 20--25
 \OT1/cmr/m/n/10 Labs  9--11 of PHY 338k: Elec-tronic Tech-niques cov-ers dig-tal and microcontroller-
  []
 
 <9.2a.1.png, id=105, 4047.12pt x 3035.34pt>
 File: 9.2a.1.png Graphic file (type png)
 <use 9.2a.1.png>
-Package pdftex.def Info: 9.2a.1.png  used on input line 65.
-(pdftex.def)             Requested size: 172.5pt x 129.35919pt.
+Package pdftex.def Info: 9.2a.1.png  used on input line 63.
+(pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 <9.2a.2.png, id=106, 4047.12pt x 3035.34pt>
 File: 9.2a.2.png Graphic file (type png)
 <use 9.2a.2.png>
-Package pdftex.def Info: 9.2a.2.png  used on input line 70.
-(pdftex.def)             Requested size: 172.5pt x 129.35919pt.
+Package pdftex.def Info: 9.2a.2.png  used on input line 68.
+(pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 <9.2a.3.png, id=107, 4047.12pt x 3035.34pt>
 File: 9.2a.3.png Graphic file (type png)
 <use 9.2a.3.png>
-Package pdftex.def Info: 9.2a.3.png  used on input line 75.
-(pdftex.def)             Requested size: 172.5pt x 129.35919pt.
+Package pdftex.def Info: 9.2a.3.png  used on input line 73.
+(pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 <9.2a.4.png, id=108, 4047.12pt x 3035.34pt>
 File: 9.2a.4.png Graphic file (type png)
 <use 9.2a.4.png>
-Package pdftex.def Info: 9.2a.4.png  used on input line 80.
-(pdftex.def)             Requested size: 172.5pt x 129.35919pt.
+Package pdftex.def Info: 9.2a.4.png  used on input line 78.
+(pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 
 
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \vbox (60.43677pt too high) has occurred while \output is active []
-
-
 
 [2 <./9.2a.1.png> <./9.2a.2.png> <./9.2a.3.png> <./9.2a.4.png>]
-
-[3]
-<9.4b.1.png, id=137, 5733.42pt x 4300.065pt>
+<9.4b.1.png, id=129, 5733.42pt x 4300.065pt>
 File: 9.4b.1.png Graphic file (type png)
 <use 9.4b.1.png>
-Package pdftex.def Info: 9.4b.1.png  used on input line 181.
+Package pdftex.def Info: 9.4b.1.png  used on input line 179.
 (pdftex.def)             Requested size: 189.75105pt x 142.25034pt.
-<9.5a.1.PNG, id=140, 803.0pt x 481.8pt>
+
+
+[3]
+<9.5a.1.PNG, id=141, 803.0pt x 481.8pt>
 File: 9.5a.1.PNG Graphic file (type png)
 <use 9.5a.1.PNG>
-Package pdftex.def Info: 9.5a.1.PNG  used on input line 203.
+Package pdftex.def Info: 9.5a.1.PNG  used on input line 201.
 (pdftex.def)             Requested size: 169.0519pt x 101.43094pt.
-<9.5a.2.PNG, id=142, 803.0pt x 481.8pt>
+<9.5a.2.PNG, id=143, 803.0pt x 481.8pt>
 File: 9.5a.2.PNG Graphic file (type png)
 <use 9.5a.2.PNG>
-Package pdftex.def Info: 9.5a.2.PNG  used on input line 209.
+Package pdftex.def Info: 9.5a.2.PNG  used on input line 207.
 (pdftex.def)             Requested size: 169.0519pt x 101.43094pt.
 
 
-[4 <./9.4b.1.png>]
-<9.5b.1.PNG, id=151, 803.0pt x 481.8pt>
+[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./9.4b.1.png> <./9.5a.1.PNG> <./9.5a.2.PNG>]
+<9.5b.1.PNG, id=155, 803.0pt x 481.8pt>
 File: 9.5b.1.PNG Graphic file (type png)
 <use 9.5b.1.PNG>
-Package pdftex.def Info: 9.5b.1.PNG  used on input line 238.
+Package pdftex.def Info: 9.5b.1.PNG  used on input line 236.
 (pdftex.def)             Requested size: 169.0519pt x 101.43094pt.
-<9.5b.2.PNG, id=152, 803.0pt x 481.8pt>
+<9.5b.2.PNG, id=156, 803.0pt x 481.8pt>
 File: 9.5b.2.PNG Graphic file (type png)
 <use 9.5b.2.PNG>
-Package pdftex.def Info: 9.5b.2.PNG  used on input line 244.
+Package pdftex.def Info: 9.5b.2.PNG  used on input line 242.
 (pdftex.def)             Requested size: 169.0519pt x 101.43094pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--257
+Underfull \hbox (badness 10000) in paragraph at lines 250--255
 
  []
 
-
-
-[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./9.5a.1.PNG> <./9.5a.2.PNG> <./9.5b.1.PNG> <./9.5b.2.PNG>]
-<9.5.1.png, id=166, 1603.9925pt x 1107.13625pt>
+<9.5.1.png, id=159, 1603.9925pt x 1107.13625pt>
 File: 9.5.1.png Graphic file (type png)
 <use 9.5.1.png>
-Package pdftex.def Info: 9.5.1.png  used on input line 276.
+Package pdftex.def Info: 9.5.1.png  used on input line 274.
 (pdftex.def)             Requested size: 241.49895pt x 166.68832pt.
-<9.5.2.png, id=167, 1331.97626pt x 1179.40625pt>
+
+
+[5 <./9.5b.1.PNG> <./9.5b.2.PNG>]
+<9.5.2.png, id=169, 1331.97626pt x 1179.40625pt>
 File: 9.5.2.png Graphic file (type png)
 <use 9.5.2.png>
-Package pdftex.def Info: 9.5.2.png  used on input line 283.
+Package pdftex.def Info: 9.5.2.png  used on input line 281.
 (pdftex.def)             Requested size: 241.49895pt x 213.83163pt.
 
 
-[6 <./9.5.1.png>]
+[6 <./9.5.1.png> <./9.5.2.png>]
 
-[7 <./9.5.2.png>]
-<10.2a.2.png, id=187, 1127.21124pt x 596.72937pt>
+[7]
+<10.2a.2.png, id=188, 1127.21124pt x 596.72937pt>
 File: 10.2a.2.png Graphic file (type png)
 <use 10.2a.2.png>
-Package pdftex.def Info: 10.2a.2.png  used on input line 388.
+Package pdftex.def Info: 10.2a.2.png  used on input line 386.
 (pdftex.def)             Requested size: 207.0021pt x 109.58282pt.
-
-
-[8]
-<10.2a.1.png, id=195, 1132.73187pt x 476.78125pt>
+<10.2a.1.png, id=189, 1132.73187pt x 476.78125pt>
 File: 10.2a.1.png Graphic file (type png)
 <use 10.2a.1.png>
-Package pdftex.def Info: 10.2a.1.png  used on input line 401.
+Package pdftex.def Info: 10.2a.1.png  used on input line 399.
 (pdftex.def)             Requested size: 207.0021pt x 87.12643pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--411
+
+[8 <./10.2a.2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 406--409
 
  []
 
 <10.2b.1.png, id=196, 1655.18375pt x 665.48625pt>
 File: 10.2b.1.png Graphic file (type png)
 <use 10.2b.1.png>
-Package pdftex.def Info: 10.2b.1.png  used on input line 422.
+Package pdftex.def Info: 10.2b.1.png  used on input line 420.
 (pdftex.def)             Requested size: 207.0021pt x 83.22618pt.
 
-
-[9 <./10.2a.2.png> <./10.2a.1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 433--437
+Underfull \hbox (badness 10000) in paragraph at lines 431--435
 
  []
 
-<10.2c.1.png, id=203, 1821.80624pt x 732.7375pt>
+<10.2c.1.png, id=199, 1821.80624pt x 732.7375pt>
 File: 10.2c.1.png Graphic file (type png)
 <use 10.2c.1.png>
-Package pdftex.def Info: 10.2c.1.png  used on input line 446.
+Package pdftex.def Info: 10.2c.1.png  used on input line 444.
 (pdftex.def)             Requested size: 258.75pt x 104.06958pt.
 
 
-[10 <./10.2b.1.png> <./10.2c.1.png>]
-<10.2d.1.png, id=210, 1777.64125pt x 1238.6275pt>
+[9 <./10.2a.1.png> <./10.2b.1.png>]
+<10.2d.1.png, id=205, 1777.64125pt x 1238.6275pt>
 File: 10.2d.1.png Graphic file (type png)
 <use 10.2d.1.png>
-Package pdftex.def Info: 10.2d.1.png  used on input line 463.
+Package pdftex.def Info: 10.2d.1.png  used on input line 461.
 (pdftex.def)             Requested size: 241.49895pt x 168.26588pt.
+
+
+[10 <./10.2c.1.png>]
 <11.1.1.png, id=213, 2850.65pt x 2850.65pt>
 File: 11.1.1.png Graphic file (type png)
 <use 11.1.1.png>
-Package pdftex.def Info: 11.1.1.png  used on input line 491.
+Package pdftex.def Info: 11.1.1.png  used on input line 489.
 (pdftex.def)             Requested size: 137.9979pt x 137.97362pt.
 
-
-[11 <./10.2d.1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 498--499
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
+
+
+[11 <./10.2d.1.png> <./11.1.1.png>]
 <11.2.1.png, id=221, 4047.12pt x 3035.34pt>
 File: 11.2.1.png Graphic file (type png)
 <use 11.2.1.png>
-Package pdftex.def Info: 11.2.1.png  used on input line 513.
+Package pdftex.def Info: 11.2.1.png  used on input line 511.
 (pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 <11.3.1.png, id=222, 1927.2pt x 1159.33125pt>
 File: 11.3.1.png Graphic file (type png)
 <use 11.3.1.png>
-Package pdftex.def Info: 11.3.1.png  used on input line 537.
+Package pdftex.def Info: 11.3.1.png  used on input line 535.
 (pdftex.def)             Requested size: 207.0021pt x 124.51953pt.
-
-
-[12 <./11.1.1.png> <./11.2.1.png>]
-<11.3.2.png, id=228, 1927.2pt x 1159.33125pt>
+<11.3.2.png, id=223, 1927.2pt x 1159.33125pt>
 File: 11.3.2.png Graphic file (type png)
 <use 11.3.2.png>
-Package pdftex.def Info: 11.3.2.png  used on input line 551.
+Package pdftex.def Info: 11.3.2.png  used on input line 549.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
-<11.3.3.png, id=229, 1927.2pt x 1159.33125pt>
+<11.3.3.png, id=224, 1927.2pt x 1159.33125pt>
 File: 11.3.3.png Graphic file (type png)
 <use 11.3.3.png>
-Package pdftex.def Info: 11.3.3.png  used on input line 558.
+Package pdftex.def Info: 11.3.3.png  used on input line 556.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
-<11.4.1.png, id=231, 1927.2pt x 1159.33125pt>
+
+
+[12 <./11.2.1.png> <./11.3.1.png>]
+<11.4.1.png, id=233, 1927.2pt x 1159.33125pt>
 File: 11.4.1.png Graphic file (type png)
 <use 11.4.1.png>
-Package pdftex.def Info: 11.4.1.png  used on input line 580.
+Package pdftex.def Info: 11.4.1.png  used on input line 578.
 (pdftex.def)             Requested size: 207.0021pt x 124.51953pt.
-
-
-[13 <./11.3.1.png> <./11.3.2.png> <./11.3.3.png>]
-<11.4.2.png, id=244, 803.0pt x 481.8pt>
+<11.4.2.png, id=235, 803.0pt x 481.8pt>
 File: 11.4.2.png Graphic file (type png)
 <use 11.4.2.png>
-Package pdftex.def Info: 11.4.2.png  used on input line 593.
+Package pdftex.def Info: 11.4.2.png  used on input line 591.
 (pdftex.def)             Requested size: 207.0021pt x 124.19905pt.
 
-Overfull \hbox (59.59525pt too wide) in paragraph at lines 611--624
+
+[13 <./11.3.2.png> <./11.3.3.png> <./11.4.1.png>]
+Overfull \hbox (59.59525pt too wide) in paragraph at lines 609--622
  [][] 
  []
 
-
-
-[14 <./11.4.1.png> <./11.4.2.png>]
 File: 11.4.1.png Graphic file (type png)
 <use 11.4.1.png>
-Package pdftex.def Info: 11.4.1.png  used on input line 632.
+Package pdftex.def Info: 11.4.1.png  used on input line 630.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
-<11.4.3.png, id=255, 1927.2pt x 1159.33125pt>
+<11.4.3.png, id=248, 1927.2pt x 1159.33125pt>
 File: 11.4.3.png Graphic file (type png)
 <use 11.4.3.png>
-Package pdftex.def Info: 11.4.3.png  used on input line 639.
+Package pdftex.def Info: 11.4.3.png  used on input line 637.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
-<11.4.4.png, id=256, 1927.2pt x 1159.33125pt>
+<11.4.4.png, id=249, 1927.2pt x 1159.33125pt>
 File: 11.4.4.png Graphic file (type png)
 <use 11.4.4.png>
-Package pdftex.def Info: 11.4.4.png  used on input line 646.
+Package pdftex.def Info: 11.4.4.png  used on input line 644.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 
+
+[14 <./11.4.2.png>]
 
 [15 <./11.4.3.png> <./11.4.4.png>]
 
@@ -563,13 +560,13 @@ Package rerunfilecheck Info: File `"Lab Report 4".out' has not changed.
 Here is how much of TeX's memory you used:
  14928 strings out of 473190
  297627 string characters out of 5715801
- 671454 words of memory out of 5000000
+ 670453 words of memory out of 5000000
  37984 multiletter control sequences out of 15000+600000
  566538 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,80p,480b,1081s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Lab Report 4.pdf" (16 pages, 155394108 bytes).
+Output written on "Lab Report 4.pdf" (16 pages, 155394390 bytes).
 PDF statistics:
  349 PDF objects out of 1000 (max. 8388607)
  264 compressed objects within 3 object streams
