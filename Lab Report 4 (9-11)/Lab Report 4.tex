@@ -6,23 +6,30 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{hyperref}
-\usepackage{circuitikz}
 
 \title{PHY 338k Lab Report 4}
 \author{Lily Nguyen with Anna Grove}
 \date{November 6, 2025}
 
 % NOTE: check all logic input/output photos and make sure they match up with the dip switch configurations
-
+% NOTE: split up the report into 3 sections, put together at the end
 \begin{document}
 
 \maketitle
 
 \section{Introduction}
 
-Labs ~9--11 of PHY 338k: Electronic Techniques explores
+Labs ~9--11 of PHY 338k: Electronic Techniques covers digtal and
+microcontroller-based electronics. Lab~9 focused on logic gates using ICs 
+and discrete transistors, Lab~10 introduced sequential logic through
+flip-flops and shift registers, and Lab~11 centered on embedded control
+using an Arduino microcontroller.
 
-\section{Lab 9: Digital Electronics I: Logic Levels and Gates}
+%-------------------------------
+% LAB 9: LOGIC LEVELS AND GATES
+%-------------------------------
+
+\section{Lab 9: Logic Levels and Gates}
 
 \subsection{Input logic signals and output signal measurement}
 
@@ -32,50 +39,50 @@ To measure the logic thresholds, we lowered the input voltage until each
 channel's LED turned off. Our results are summarized in Table~\ref{tab:logic_thresh}.
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|}
-%         \hline
-%         Channel & Threshold (V) \\
-%         \hline
-%         1 & 1.15\\
-%         2 & 1.09\\
-%         3 & 1.04\\
-%         4 & 1.04\\
-%         \hline
-%     \end{tabular}
-%     \caption{Measured LED turn-off voltages for the four logic monitoring channels.}
-%     \label{tab:logic_thresh}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Channel & Threshold (V) \\
+        \hline
+        1 & 1.15\\
+        2 & 1.09\\
+        3 & 1.04\\
+        4 & 1.04\\
+        \hline
+    \end{tabular}
+    \caption{Measured LED turn-off voltages for the four logic monitoring channels.}
+    \label{tab:logic_thresh}
+\end{table}
 
 \noindent Our measured values were reasonably close to the specified 
 1.4\si{\volt} threshold given by the PB-503.
 
 % ADD THIS BACK LATER, REMOVED TEMPORARILY TO SPEED UP COMPILING
-% \begin{figure}[H]
-%     \centering
-%     \begin{subfigure}[b]{0.27\linewidth}
-%         \includegraphics[width=\linewidth]{9.2a.1.png}
-%         \caption{Logic state: 1111}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[b]{0.27\linewidth}
-%         \includegraphics[width=\linewidth]{9.2a.2.png}
-%         \caption{Logic state: 0100}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[b]{0.27\linewidth}
-%         \includegraphics[width=\linewidth]{9.2a.3.png}
-%         \caption{Logic state: 0101}
-%     \end{subfigure}
-%     \hfill
-%     \begin{subfigure}[b]{0.27\linewidth}
-%         \includegraphics[width=\linewidth]{9.2a.4.png}
-%         \caption{Logic state: 1100}
-%     \end{subfigure}
-%     \caption{Logic monitor output for various DIP switch configurations.}
-%     \label{fig:logic_monitor}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.5\linewidth}%0.27
+        \includegraphics[width=\linewidth]{9.2a.1.png}
+        \caption{Logic state: 1111}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{9.2a.2.png}
+        \caption{Logic state: 0100}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{9.2a.3.png}
+        \caption{Logic state: 0101}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{9.2a.4.png}
+        \caption{Logic state: 1100}
+    \end{subfigure}
+    \caption{Logic monitor output for various DIP switch configurations.}
+    \label{fig:logic_monitor}
+\end{figure}
 
 \subsection{Quad NAND gate}
 
@@ -84,21 +91,21 @@ chips. Our measured outputs match what we would expect for a NAND gate, where
 it goes high for all inputs except 11.
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|}
-%         \hline
-%         Input & 74HCT00N V\textsubscript{out} (V) & 7400N V\textsubscript{out} (V) \\
-%         \hline
-%         00 & 4.98 & 3.45\\
-%         01 & 4.96 & 3.40\\
-%         10 & 4.95 & 3.42\\
-%         11 & 0.05 & 0.18\\
-%         \hline
-%     \end{tabular}
-%     \caption{Measured output voltages for the 2-input NAND gate.}
-%     \label{tab:two_nand}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Input & 74HCT00N V\textsubscript{out} (V) & 7400N V\textsubscript{out} (V) \\
+        \hline
+        00 & 4.98 & 3.45\\
+        01 & 4.96 & 3.40\\
+        10 & 4.95 & 3.42\\
+        11 & 0.05 & 0.18\\
+        \hline
+    \end{tabular}
+    \caption{Measured output voltages for the 2-input NAND gate.}
+    \label{tab:two_nand}
+\end{table}
 
 \noindent As shown in Table~\ref{tab:two_nand}, the CMOS gate output swings nearly the
 full 0\si{\volt} to 5\si{\volt} range, whereas the TTL gate shows a lower high
@@ -115,21 +122,21 @@ Our experimental truth table in Table~\ref{tab:nand_or} confirms that the NAND
 gate circuit correctly implements the OR function.
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|}
-%         \hline
-%         A & B & Output\\
-%         \hline
-%         0 & 0 & 0\\
-%         0 & 1 & 1\\
-%         1 & 0 & 1\\
-%         1 & 1 & 1\\
-%         \hline
-%     \end{tabular}
-%     \caption{Experimental truth table for NAND implementation of OR gate.}
-%     \label{tab:nand_or}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        A & B & Output\\
+        \hline
+        0 & 0 & 0\\
+        0 & 1 & 1\\
+        1 & 0 & 1\\
+        1 & 1 & 1\\
+        \hline
+    \end{tabular}
+    \caption{Experimental truth table for NAND implementation of OR gate.}
+    \label{tab:nand_or}
+\end{table}
 
 \subsubsection{A four input NAND gate circuit}
 
@@ -137,44 +144,44 @@ This circuit implements the logic function $Y=(A+B)+(C\cdot D)$, which outputs
 1 if either A or B is high, or if both C and D are high.
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|c|c|c|}
-%         \hline
-%         A & B & C & D & Y\\
-%         \hline
-%         0 & 0 & 0 & 0 & 0\\
-%         0 & 0 & 0 & 1 & 0\\
-%         0 & 0 & 1 & 0 & 0\\
-%         0 & 0 & 1 & 1 & 1\\
-%         0 & 1 & 0 & 0 & 1\\
-%         0 & 1 & 0 & 1 & 1\\
-%         0 & 1 & 1 & 0 & 1\\
-%         0 & 1 & 1 & 1 & 1\\
-%         1 & 0 & 0 & 0 & 1\\
-%         1 & 0 & 0 & 1 & 1\\
-%         1 & 0 & 1 & 0 & 1\\
-%         1 & 0 & 1 & 1 & 1\\
-%         1 & 1 & 0 & 0 & 1\\
-%         1 & 1 & 0 & 1 & 1\\
-%         1 & 1 & 1 & 0 & 1\\
-%         1 & 1 & 1 & 1 & 1\\
-%         \hline
-%     \end{tabular}
-%     \caption{Experimental truth table for the four-input NAND gate circuit.}
-%     \label{tab:four_input_nand}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        A & B & C & D & Y\\
+        \hline
+        0 & 0 & 0 & 0 & 0\\
+        0 & 0 & 0 & 1 & 0\\
+        0 & 0 & 1 & 0 & 0\\
+        0 & 0 & 1 & 1 & 1\\
+        0 & 1 & 0 & 0 & 1\\
+        0 & 1 & 0 & 1 & 1\\
+        0 & 1 & 1 & 0 & 1\\
+        0 & 1 & 1 & 1 & 1\\
+        1 & 0 & 0 & 0 & 1\\
+        1 & 0 & 0 & 1 & 1\\
+        1 & 0 & 1 & 0 & 1\\
+        1 & 0 & 1 & 1 & 1\\
+        1 & 1 & 0 & 0 & 1\\
+        1 & 1 & 0 & 1 & 1\\
+        1 & 1 & 1 & 0 & 1\\
+        1 & 1 & 1 & 1 & 1\\
+        \hline
+    \end{tabular}
+    \caption{Experimental truth table for the four-input NAND gate circuit.}
+    \label{tab:four_input_nand}
+\end{table}
 
 \noindent The truth table we obtained matches with the expected behavior for
 this circuit layout.
 
 % ADD BACK LATER
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.55\textwidth]{9.4b.1.png}
-%     \caption{Logic monitor output for the input state 1010.}
-%     \label{fig:four_input_nand}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{9.4b.1.png}
+    \caption{Logic monitor output for the input state 1010.}
+    \label{fig:four_input_nand}
+\end{figure}
 
 \noindent Figure~\ref{fig:four_input_nand} shows the output Y as high (1),
 which is consistent with the circuit's logic function.
@@ -189,23 +196,23 @@ it with a TTL square wave. Figure~\ref{fig:pp_inv} shows our inverter producing 
 low output when the input is high, and vice versa. 
 
 % ADD BACK LATER
-% \begin{figure}[H]
-%     \centering
-%     \begin{subfigure}[b]{0.49\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{9.5a.1.PNG}
-%         \caption{Low frequency input $f=106.2\si{\hertz}$}
-%         \label{fig:pp_inv_low}
-%     \end{subfigure}
-%     \begin{subfigure}[b]{0.49\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{9.5a.2.PNG}
-%         \caption{High frequency input $f=107.2\si{\kilo\hertz}$}
-%         \label{fig:pp_inv_high}
-%     \end{subfigure}
-%     \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
-%     \label{fig:pp_inv}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{9.5a.1.PNG}
+        \caption{Low frequency input $f=106.2\si{\hertz}$}
+        \label{fig:pp_inv_low}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{9.5a.2.PNG}
+        \caption{High frequency input $f=107.2\si{\kilo\hertz}$}
+        \label{fig:pp_inv_high}
+    \end{subfigure}
+    \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
+    \label{fig:pp_inv}
+\end{figure}
 
 \noindent At low frequency, the output followed the expected inversion with symmetric rise 
 and fall times of $t_\text{rise}=25.59\si{\micro\second}$ and $t_\text{fall}=24.57\si{\micro\second}$, respecively.
@@ -224,23 +231,23 @@ The input (CH1, yellow) and output (CH2, blue) are shown in Figure~\ref{fig:ap_i
 at both high and low frequencies.
 
 % ADD BACK LATER
-% \begin{figure}[H]
-%     \centering
-%     \begin{subfigure}[b]{0.49\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{9.5b.1.PNG}
-%         \caption{Low frequency input $f=101.4\si{\hertz}$}
-%         \label{fig:ap_inv_low}
-%     \end{subfigure}
-%     \begin{subfigure}[b]{0.49\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{9.5b.2.PNG}
-%         \caption{High frequency input $f=102.0\si{\kilo\hertz}$}
-%         \label{fig:ap_inv_high}
-%     \end{subfigure}
-%     \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
-%     \label{fig:ap_inv}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{9.5b.1.PNG}
+        \caption{Low frequency input $f=101.4\si{\hertz}$}
+        \label{fig:ap_inv_low}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{9.5b.2.PNG}
+        \caption{High frequency input $f=102.0\si{\kilo\hertz}$}
+        \label{fig:ap_inv_high}
+    \end{subfigure}
+    \caption{Oscilloscope traces showing passive pull-up inverter behavior at low and high frequencies. CH1 (yellow) is the input and CH2 (blue) is the output.}
+    \label{fig:ap_inv}
+\end{figure}
 
 \noindent At low frequency, the inverter behaved as expected with symmetrical rise and 
 fall times of around $t_\text{rise}=26.62\si{\micro\second}$ and $t_\text{fall}=25.60\si{\micro\second}$,
@@ -258,34 +265,49 @@ logic circuits use active pull-up design.
 
 \subsubsection{CMOS NAND gate constructed from individual transistors}
 
-%-----------------------------------
-NOTE: FINISH UP THIS PART LATER!!!
-%-----------------------------------
+Finally, we built a CMOS NAND gate using four transistors from the CD4007 IC.
+Figure~\ref{fig:cd4007_pins} shows the pin-level wiring with external connections,
+amd Figure~\ref{fig:cd4007_circuit} shows the corresponding transistor-level
+schematic with labeled pin numbers. Our labels for Q~1--4 are based on Figure IX-9
+from the lab manual.
 
-\textit{Show the circuit diagram your used with just the CD4007 pins and your external
-connections, and also another diagram showing the complete circuit with the individual transistor
-connections.}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{9.5.1.png}
+    \caption{CD4007 pins with external connections for a NAND gate circuit.}
+    \label{fig:cd4007_pins}
+\end{figure}
 
-\noindent \textit{Also show the CD4007 pins on the second diagram.}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{9.5.2.png}
+    \caption{Complete NAND gate circuit using CD4007 with individual transistor connections.}
+    \label{fig:cd4007_circuit}
+\end{figure}
 
-% ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|}
-%         \hline
-%         A & B & Output\\
-%         \hline
-%         0 & 0 & 1\\
-%         0 & 1 & 1\\
-%         1 & 0 & 1\\
-%         1 & 1 & 0\\
-%         \hline
-%     \end{tabular}
-%     \caption{Experimental truth table for the CD4007 CMOS NAND gate.}
-%     \label{tab:cmos_nand}
-% \end{table}
+\noindent Our circuit functioned as expected since our experimental outputs
+matched that of a NAND gate. Our results are shown in Table~\ref{tab:cd4007_nand}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        A & B & Output\\
+        \hline
+        0 & 0 & 1\\
+        0 & 1 & 1\\
+        1 & 0 & 1\\
+        1 & 1 & 0\\
+        \hline
+    \end{tabular}
+    \caption{Experimental truth table for the CD4007 CMOS NAND gate.}
+    \label{tab:cd4007_nand}
+\end{table}
 
 
+%-----------------------------------------
+% LAB 10: FLIP-FLOPS AND SEQUENTIAL LOGIC
+%-----------------------------------------
 
 \section{Lab 10: Flip-Flops and Sequential Logic}
 
@@ -297,27 +319,27 @@ We tested the SR flip-flop by applying a sequency of $S$ and $R$ inputs. Our
 circuit correctly set ($S=0,R=1$), reset ($S=1,R=0$), and held its state when
 both inputs were high. When both inputs were low ($S=0,R=0$), the circuit
 entered an invalid state with undefined outputs, which confirmed that this
-condition should be avoided. Our trial results are summarized in Table~\ref{tab:asynch_flipflop}
+condition should be avoided. Our results are summarized in Table~\ref{tab:asynch_flipflop}
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|c|c|l|}
-%     \hline
-%     Step & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
-%     \hline
-%     1 & 0 & 1 & 1 & 0 & Set \\
-%     2 & 1 & 1 & 1 & 0 & Hold previous state (Q = 1) \\
-%     3 & 1 & 0 & 0 & 1 & Reset \\
-%     4 & 1 & 1 & 0 & 1 & Hold previous state (Q = 0) \\
-%     5 & 0 & 1 & 1 & 0 & Set \\
-%     6 & 1 & 1 & 1 & 0 & Hold \\
-%     7 & 0 & 0 & ? & ? & Invalid (forbidden state) \\
-%     \hline
-%     \end{tabular}
-%     \caption{Test sequence for asynchronous SR flip-flop.}
-%     \label{tab:asynch_flipflop}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|l|}
+    \hline
+    Step & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
+    \hline
+    1 & 0 & 1 & 1 & 0 & Set \\
+    2 & 1 & 1 & 1 & 0 & Hold previous state (Q = 1) \\
+    3 & 1 & 0 & 0 & 1 & Reset \\
+    4 & 1 & 1 & 0 & 1 & Hold previous state (Q = 0) \\
+    5 & 0 & 1 & 1 & 0 & Set \\
+    6 & 1 & 1 & 1 & 0 & Hold \\
+    7 & 0 & 0 & ? & ? & Indeterminate \\
+    \hline
+    \end{tabular}
+    \caption{Test sequence for asynchronous SR flip-flop.}
+    \label{tab:asynch_flipflop}
+\end{table}
 
 
 \subsubsection{Clocked SR flip-flop}
@@ -329,24 +351,24 @@ There was an invalid state when both S and R were low during a high CLK input,
 which gave us undefined outputs. Our results are summarized in Table~\ref{tab:clocked_sr}.
 
 % ADD BACK LATER
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|c|c|c|c|l|}
-%     \hline
-%     Step & CLK & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
-%     \hline
-%     1 & 0 & 0 & 1 & - & - & Clock low, hold previous state \\
-%     2 & 1 & 0 & 1 & 1 & 0 & Clock high, set \\
-%     3 & 0 & 1 & 1 & 1 & 0 & Clock low, hold \\
-%     4 & 1 & 1 & 0 & 0 & 1 & Clock high, reset \\
-%     5 & 1 & 1 & 1 & 0 & 1 & Clock and both inputs high, hold \\
-%     6 & 0 & 0 & 1 & 0 & 1 & Clock low, hold \\
-%     7 & 1 & 0 & 0 & ? & ? & Clock high, invalid input \\
-%     \hline
-%     \end{tabular}
-%     \caption{Test sequence for clocked SR flip-flop.}
-%     \label{tab:clocked_sr}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|l|}
+    \hline
+    Step & CLK & $S$ & $R$ & $Q$ & $\overline{Q}$ & Description \\
+    \hline
+    1 & 0 & 0 & 1 & - & - & Clock low, hold previous state \\
+    2 & 1 & 0 & 1 & 1 & 0 & Clock high, set \\
+    3 & 0 & 1 & 1 & 1 & 0 & Clock low, hold \\
+    4 & 1 & 1 & 0 & 0 & 1 & Clock high, reset \\
+    5 & 1 & 1 & 1 & 0 & 1 & Clock high, hold \\
+    6 & 0 & 0 & 1 & 0 & 1 & Clock low, hold \\
+    7 & 1 & 1 & 1 & ? & ? & Clock high, indeterminate \\
+    \hline
+    \end{tabular}
+    \caption{Test sequence for clocked SR flip-flop.}
+    \label{tab:clocked_sr}
+\end{table}
 
 
 \subsection{D-type flip-flop}
@@ -354,103 +376,295 @@ which gave us undefined outputs. Our results are summarized in Table~\ref{tab:cl
 
 \subsubsection{D-type flip-flop operation}
 
-We tested the functionality of the D-type flip-flop by connecting a slide 
-switch to the D input and using a debounced pushbutton switch to provide the
-clock signal. As expected, the output Q updated to match the value of D only
-on the rising edge of the clock, so we confirm that the flip-flop is positive-
-edge triggered.\\
+We tested the functionality of the D-type flip-flop and included sketches of
+the timing diagrams of our observations for this section in Figures~\ref{fig:clocked_d_flipflop} 
+and~\ref{fig:d_flipflop}. We connected a slide switch to the D input and using 
+a debounced pushbutton switch to provide the clock signal. As expected, the 
+output Q updated to match the value of D only on the rising edge of the clock, 
+so we confirm that the flip-flop is positive-edge triggered.
 
-\noindent We also teseted the asynchronous inputs. Pulling the SET input low
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{10.2a.2.png}
+    \caption{Timing diagram for positive-edge triggered d-type flip-flop.}
+    \label{fig:clocked_d_flipflop}
+\end{figure}
+
+\noindent We also tested the asynchronous inputs. Pulling the SET input low
 immediately forced Q high regardless of the clock or D input. Similarly, pulling
 the RESET input low forced Q to low. Both inputs operated asynchronously and
 overrode the normal clock behavior. After releasing, the flip-flop went back to
 regular edge-triggered operation.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{10.2a.1.png}
+    \caption{Asynchronous behavior of the d-type flip-flop. SET immediately forces Q high, and RESET forces Q low.}
+    \label{fig:d_flipflop}
+\end{figure}
 
 \subsubsection{Flip-flop with feedback}
 
-\noindent \textit{Clock the circuit manually and observe the output.}\\
-
-\noindent \textit{Watch the Clock input and the Q output on an oscilloscope. What is the circuit doing?}\\
-
-\noindent \textit{Turn the frequency up and measure the propagation delay of the circuit.}\\
-
-\noindent \textit{Why is this relevant given the feedback connection from Q-bar to D?}
-
 We connected the D flip-flop in a feedback configuration by wiring $\overline{Q}$
-to the D input. The output Q alternated between 0 and 1 with each clock pulse
-when we clocked it manually using a pushbutton. Thus, we confirm that our flip-flop
-circuit acts as a divide-by-2 frequency divider since Q toggles on every risinge
-edge.\\
+to the $D$ input. The output $Q$ toggled between 0 and 1 with each rising edge of
+the clock, so we confirm the flip-flop's divide-by-2 function.\\
 
-\noindent \dots
+\noindent Using a function generator and oscilloscope, we observed that $Q$ continued to
+toggle as expected. We measured a propagation delay between the clock edge and $Q$
+transition as approximately $t_\text{prop}=24$ \si{\nano\second}, which is
+reasonably close to the datasheet specification of 22 \si{\nano\second}. This delay
+is relevant because the feedback loop relies on $Q$ updating in time, so at higher
+clock speeds, too much delay could cause incorrect toggling.
 
-\noindent The propa
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{10.2b.1.png}
+    \caption{Timing diagram showing CLK input and resulting $Q$ output for flip-flop with feedback (mod-2 counter).}
+    \label{fig:flipflop_feedback}
+\end{figure}
+
+\noindent Figure~\ref{fig:flipflop_feedback} shows a timing diagram we observed
+for this setup where $Q$ output toggles on each rising edge of the clock to
+produce a square wave at half the clock frequency.
 
 \subsubsection{Cascaded flip-flops}
 
-\noindent \textit{Using the function generator as the clock input for U1, observe and record the Q output of U2.}
+Next, we built a cascaded flip-flop circuit with feedback by connecting the
+$\overline{Q}$ output to its own input $D$ to create toggle behavior. We drove
+the clock input of the first flip-flop (U1) with a function generator and
+clocked the second flip-flop (U2) using the $Q$ output of U1.\\
 
+\noindent We observed the $Q$ output of U2 and found that it toggled at one-quarter of
+the frequency of the original clock signal. Our setup functioned as a ripple
+counter where U1 divided the input frequency by 2 and U2 divided it again by 
+2. U2 changed state only when the output of U1 transitioned, which confirmed
+the expected asynchronous behavior of a mod-4 counter. A sketch of our scope 
+observations is included in Figure~\ref{fig:mod4_counter}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{10.2c.1.png}
+    \caption{Timing diagram of the mod-4 ripple counter. Yellow is the clock input to U1, blue is the Q output of U2, and pink is what we expect for the output Q of U1 that feeds into the clock of U2.}
+    \label{fig:mod4_counter}
+\end{figure}
 
 \subsubsection{Shift register}
 
-\noindent \textit{Using the scope, observe the IN and Q output of the first flip-flop. Why the jitter?}\\
+Finally, we connected four D-type flip-flops in series to form a shift register
+with the data input (IN) connected to the D input of U1 and all flip-flops
+clocked in parallel using a function generator. We used an oscilloscope to
+observe both the IN signal and the Q output of U1. There was a small "jitter"
+(timing offset) between these two signals due to IN being stable before the
+rising edge of the clock whereas Q1 updates slightly after it. This offset
+is a result of the propagation delay of the flip-flop.
 
-\noindent \textit{Next, watch the output Q2 along with IN. Repeat for Q3 and Q4. What is the circuit doing?}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{10.2d.1.png}
+    \caption{Timing diagram for data movement through the 4-bit shift register.}
+    \label{fig:shift_register}
+\end{figure}
+
+\noindent We observed the Q outputs of U2, U3, and U4 along with IN. With each
+rising edge of the clock, we saw the data shift sequentially through the
+register from Q1 to Q2 to Q3 to Q4 (one bit per cycle). Thus, we confirm the
+function of our shift-register circuit. Our observations are illustrated in
+the timing diagram in Figure~\ref{fig:shift_register}.
 
 
-
+%---------------------------------------
+% LAB 11: MICROCONTROLLER APPLICATIONS
+%---------------------------------------
 
 \section{Lab 11: Microcontroller Applications}
 
 
 \subsection{Getting started with the Arduino IDE}
 
-\noindent \textit{You should now see the program running your Arduino, i.e. you should see the LED on the board blinking on and off}\\
+First, we installed the Arduino IDE, configured it for the UNO R4 Minima, and
+uploaded the \texttt{Blink} sketch. The LED blinked as expected. After modifying
+the delay values, the LED blink rate changed accordingly. A photo of our setup
+is shown in Figure~\ref{fig:blinker}.
 
-\noindent \textit{You should now see the LED blinking with your new time periods.}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{11.1.1.png}
+    \caption{Arduino R4 Minima running the \texttt{Blink} sketch.}
+    \label{fig:blinker}
+\end{figure}
 
 \subsection{Connecting a display}
 
-\noindent \textit{Get the output text on the display}\\
+NOTE: GET CUSTOM LCD DISPLAY WORDS\\
 
-\noindent \textit{Change the program to output a few of your favorite words and verify that these new words are output on the display.}
+\noindent We connected the I\textsuperscript{2}C LCD display to the Arduino UNO R4 Minima
+and uploaded the provided sketch. The display successfully showed the default
+message. We then modified the code to print our own words, which also appeared
+correctly on the screen. 
+
+%----------------------------------------------------------------------
+% NOTE: IF TIME PERMITS, GO IN LAB AND GET CUSTOM LED WORD DISPLAY PIC
+%----------------------------------------------------------------------
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.2.1.png}
+        \caption{LCD display showing the default message.}
+        \label{fig:lcd_default}
+    \end{subfigure}
+    \hfill
+    % \begin{subfigure}[b]{0.49\linewidth}
+    %     \centering
+    %     \includegraphics[width=\linewidth]{lcd_custom.jpg}
+    %     \caption{LCD display showing a custom message.}
+    %     \label{fig:lcd_custom}
+    % \end{subfigure}
+    % \caption{LCD displays.}
+    % \label{fig:lcd_output}
+\end{figure}
 
 
 \subsection{Measuring an analog voltage}
 
-\noindent \textit{Verify that the signal is the same as what you see on the oscilloscope}\\
+We used the \texttt{ReadAnalogVoltage} sketch to measure a 20~Hz sine wave from
+a function generator. The waveform that appeared on the Serial Plotter accurately
+reflected what was shown on the oscilloscope.
 
-*aliasing - occurs due to periodic sampling of a periodic wave\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{11.3.1.png}
+    \caption{.}
+    \label{fig:sine}
+\end{figure}
 
-\noindent \textit{At about what frequency does the display fail to keep up with the input sine wave?}\\
+\noindent At the default serial communication rate of 9600 bits/s, the Arduino was able to
+faithfully record sine waves up to approximately 50--60 Hz. Above this
+range, the Serial Plotter showed noticeable distortion due to insufficient
+sampling and transmission speed, known as aliasing.
 
-\noindent \textit{See if you can get the Arduino to record a faster sine wave. Verify that you can now see a faster sine wave on the display.}\\
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.3.2.png}
+        \caption{$f=54$ Hz}
+        \label{fig:aliasing1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.3.3.png}
+        \caption{$f>54$ Hz}
+        \label{fig:aliasing2}
+    \end{subfigure}
+    \caption{Serial Plotter output of analog sine wave input where aliasing occurs.}
+    \label{fig:aliasing}
+\end{figure}
 
-\noindent \textit{What's the fastest sine wave that you can faithfully record now?}
+\noindent After increasing the serial communication rate to 250000 bits/s, the
+Arduino was able to record and display signals up to 240 Hz. Beyond this point,
+aliasing effects become noticeable again.
 
 
 \subsection{Digital PID control loop}
 
-\noindent \textit{Open a serial plotter window with the baud rate to 9600 and view the resulting voltages}\\
+We set the Serial Plotter to 9600 baud and observed the output voltage.
+After reset, the voltage dropped to zero before the feedback loop
+activated. The output then exhibited damped oscillations as it converged
+to a set-point, as shown in Figure~\ref{fig:pid_damped}
 
-\noindent \textit{You should see the voltage drop to zero for a period of time, after which the feedback loop kicks in. What happens as the feedback tries to stabilize the voltage to the set-point?}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{11.4.1.png}
+    \caption{Serial plotter showing damped oscillatory response as the PID control loop stabilizes the output.}
+    \label{fig:pid_damped}
+\end{figure}
 
-\noindent \textit{Using the oscilloscope, observe the direct digital output at I/O pin 6, and also view the filtered output.}\\
+\noindent We used the oscilloscope to view the PWM signal on digital pin 6 and
+the corresponding filtered analog output. CH2 shows the raw PWM and CH1 shows the
+voltage afer passing through an RC low-pass filter. The filtered signal appeared
+smooth and continuous, so we confirm the filter was effective in revmoving the
+high-frequency components of the PWM. Figure~\ref{fig:pwm} includes the scope display.
 
-\noindent \textit{comment on how effective the filter is at removing the PWM from the output}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{11.4.2.png}
+    \caption{Scope display showing CH1 (yellow) as the filtered analog output and CH2 (blue) as the unfiltered PWM signal.}
+    \label{fig:pwm}
+\end{figure}
 
-\noindent \textit{Try changing the parameters kp, ki, and kd to see what happens.}\\
+\noindent We tested several PID parameter combinations and observed their
+effects on convergence speed and waveform stability. A summary of our results
+is shown in Table~\ref{tab:pid_tuning}. Adjusting $k_p$, $k_i$, and $k_d$ altered
+the damping and symmetry of the response:
+\begin{itemize}
+    \item Increasing $k_p$ led to faster convergence with minimal oscillation.
+    \item Increasing $k_i$ caused asymmetric decay and shifted the center upward.
+    \item Increasing $k_d$ decreased damping, whereas decreasing it produced more stable decay.
+    \item Very low $k_p$ led to an overdamped response with no oscillations.
+\end{itemize}
 
-\noindent \textit{Record what happens for some representative set of parameters. What parameters cause the voltage to converge most quickly to the setpoint? Under what conditions is the voltage vs. time more stable? Less stable? Completely unstable?}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|l|}
+    \hline
+    Case & $k_p$ & $k_i$ & $k_d$ & Observations\\
+    \hline
+    1 & 0.8 & 0.2 & 0.001 & Symmetrical decay, baseline response\\
+    2 & 0.4 & 0.2 & 0.001 & Faster convergence with minimal oscillation\\
+    3 & 0.8 & 0.6 & 0.001 & Asymmetric decay favoring upper half\\
+    4 & 0.8 & 0.1 & 0.001 & Slight asymmetric decay favoring lower half\\
+    5 & 0.8 & 0.1 & 0.01  & Less damping, symmetrical oscillation\\
+    6 & 0.8 & 0.2 & 0.0001 & More damping, symmetrical oscillation\\
+    7 & 0.05 & 0.2 & 0.001 & Overdamped, smooth exponential decay with no oscillations\\
+    \hline
+    \end{tabular}
+    \caption{Effects of various PID parameter combinations on voltage response behavior.}
+    \label{tab:pid_tuning}
+\end{table}
 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.4.1.png}
+        \caption{Default PID parameters with symmetrical oscillations and damping.}
+        \label{fig:pid_default}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.4.3.png}
+        \caption{Increasing $k_i$ caused asymmetric decay biased upwards.}
+        \label{fig:pid_assymmetric}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{11.4.4.png}
+        \caption{Low $k_p$ with smooth exponential convergence (overdamped behavior).}
+        \label{fig:pid_exp_decay}
+    \end{subfigure}
+    \caption{Serial Plotter displays under different PID parameter settings.}
+    \label{fig:pid_params}
+\end{figure}
+
+\noindent The voltage converged most quickly in Case 2, where reducing $k_p$
+led to faster damping with minimal oscillation. The most stable response occured
+in Case 7 where $k_p=0.05$, which resulted in overdamped behavior with exponential
+convergence. We observed less stable responses when adjusting $k_i$, which
+introduced assymetry to the waveform (Cases 3 and 4). 
 
 
 \section*{Conclusion}
 
-Labs~9-11
+Through these experiments, we developed practical skills in both discrete and
+programmable digital systems. We verified logic gate behavior, built and tested
+flip-flop circuits, and implemented microcontroller-based control with real-time
+feedback. These proceures deepened our understanding of how digital logic and e
+embedded systems can be applied in electronics designs.
 
 \section*{Acknowledgements}
 
