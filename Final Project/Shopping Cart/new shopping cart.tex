@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{circuitikz}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{geometry} % move this above hyperref
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\geometry{letterpaper, margin=1in}
+
+
+\title{PHY 338K Final Project Shopping Cart}
+\author{Anna Grove and Lily Nguyen \\ PHY 338K}
+\date{November 5, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Items}
+
+\noindent Parts can be located at \href{https://www.digikey.com/}{DigiKey Electronics} using the part numbers listed in Table~\ref{tab:parts_list}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|l|l|l|}
+        \hline
+        \textbf{Quantity} & \textbf{Item} & \textbf{Digi-Key Part Number} & \textbf{Description} \\
+        \hline
+        4 & AD711 & \href{https://www.digikey.com/en/products/detail/analog-devices-inc/AD711JNZ/671001}{505-AD711JNZ-ND} & AD711 Op-amp \\
+        2 & BB-32656 &  \href{https://www.digikey.com/en/products/detail/bud-industries/BB-32656/8602381}{377-2646-ND} & Breadboard \\
+        12 & 1N4148 & \href{https://www.digikey.com/en/products/detail/onsemi/1N4148/458603}{1N4148FS-ND} & 1N148 Diode \\
+        6 & CF12JT6K80 & \href{https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF12JT6K80/1741188}{CF12JT6K80CT-ND} & 6.8k resistor\\
+        2 & MFP50SCRD52-6K & \href{https://www.digikey.com/en/products/detail/yageo/MFP50SCRD52-6K/9128900}{13-MFP50SCRD52-6KCT-ND} & 6k resistor\\
+        4 & CMF554K0000BHEB & \href{https://www.digikey.com/en/products/detail/vishay-dale/CMF554K0000BHEB/3634188}{541-CMF554K0000BHEBCT-ND} & 4k resistor\\
+        2 & CF14JT3K00 & \href{https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT3K00/1741418}{CF14JT3K00CT-ND} & 3k resistor\\
+        5 & CF14JT2K00 & \href{https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT2K00/1741368}{CF14JT2K00CT-ND} & 2k resistor\\
+        4 & CF14JT1K00 & \href{https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT1K00/1741314}{CF14JT1K00CT-ND} & 1k resistor\\
+        1 & 3590S-2-103L & \href{https://www.digikey.com/en/products/detail/bourns-inc/3590S-2-103L/1088586}{3590S-2-103L-ND} & 10k 10-turn rotpot\\
+        1 & 026TB32R5A0B1A1 & \href{https://www.digikey.com/en/products/detail/cts-electrocomponents/026TB32R5A0B1A1/203771}{CT2150-ND} & 5k 1-turn rotpot\\
+        3 & 3296W-1-103LF & \href{https://www.digikey.com/en/products/detail/bourns-inc/3296W-1-103LF/1088045}{3296W-103LF-ND} & 10k 25-turn trimpot\\
+        1 & 3296W-1-502RLF & \href{https://www.digikey.com/en/products/detail/bourns-inc/3296W-1-502RLF/2535942}{118-3296W-1-502RLFCT-ND} & 5k 25-turn trimpot\\
+        \hline
+    \end{tabular}
+    \caption{List of components used in the project. Each part number links to its DigiKey page.}
+    \label{tab:parts_list}
+\end{table}
+
+\end{document}
