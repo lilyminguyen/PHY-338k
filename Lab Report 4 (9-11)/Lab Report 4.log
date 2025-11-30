@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 NOV 2025 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  29 NOV 2025 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,32 +486,27 @@ File: 11.1.1.png Graphic file (type png)
 Package pdftex.def Info: 11.1.1.png  used on input line 498.
 (pdftex.def)             Requested size: 169.0519pt x 126.76552pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
-
- []
-
-
 
 [11 <./10.2d.1.png> <./11.1.1.png>]
 <11.2.1.png, id=221, 4047.12pt x 3035.34pt>
 File: 11.2.1.png Graphic file (type png)
 <use 11.2.1.png>
-Package pdftex.def Info: 11.2.1.png  used on input line 518.
+Package pdftex.def Info: 11.2.1.png  used on input line 516.
 (pdftex.def)             Requested size: 137.9979pt x 103.46883pt.
 <11.3.1.png, id=222, 1927.2pt x 1159.33125pt>
 File: 11.3.1.png Graphic file (type png)
 <use 11.3.1.png>
-Package pdftex.def Info: 11.3.1.png  used on input line 532.
+Package pdftex.def Info: 11.3.1.png  used on input line 530.
 (pdftex.def)             Requested size: 207.0021pt x 124.51953pt.
 <11.3.2.png, id=223, 1927.2pt x 1159.33125pt>
 File: 11.3.2.png Graphic file (type png)
 <use 11.3.2.png>
-Package pdftex.def Info: 11.3.2.png  used on input line 546.
+Package pdftex.def Info: 11.3.2.png  used on input line 544.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 <11.3.3.png, id=224, 1927.2pt x 1159.33125pt>
 File: 11.3.3.png Graphic file (type png)
 <use 11.3.3.png>
-Package pdftex.def Info: 11.3.3.png  used on input line 553.
+Package pdftex.def Info: 11.3.3.png  used on input line 551.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 
 
@@ -519,33 +514,33 @@ Package pdftex.def Info: 11.3.3.png  used on input line 553.
 <11.4.1.png, id=233, 1927.2pt x 1159.33125pt>
 File: 11.4.1.png Graphic file (type png)
 <use 11.4.1.png>
-Package pdftex.def Info: 11.4.1.png  used on input line 575.
+Package pdftex.def Info: 11.4.1.png  used on input line 573.
 (pdftex.def)             Requested size: 207.0021pt x 124.51953pt.
 <11.4.2.png, id=235, 803.0pt x 481.8pt>
 File: 11.4.2.png Graphic file (type png)
 <use 11.4.2.png>
-Package pdftex.def Info: 11.4.2.png  used on input line 588.
+Package pdftex.def Info: 11.4.2.png  used on input line 586.
 (pdftex.def)             Requested size: 207.0021pt x 124.19905pt.
 
 
 [13 <./11.3.2.png> <./11.3.3.png> <./11.4.1.png>]
-Overfull \hbox (59.59525pt too wide) in paragraph at lines 606--619
+Overfull \hbox (59.59525pt too wide) in paragraph at lines 604--617
  [][] 
  []
 
 File: 11.4.1.png Graphic file (type png)
 <use 11.4.1.png>
-Package pdftex.def Info: 11.4.1.png  used on input line 627.
+Package pdftex.def Info: 11.4.1.png  used on input line 625.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 <11.4.3.png, id=248, 1927.2pt x 1159.33125pt>
 File: 11.4.3.png Graphic file (type png)
 <use 11.4.3.png>
-Package pdftex.def Info: 11.4.3.png  used on input line 634.
+Package pdftex.def Info: 11.4.3.png  used on input line 632.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 <11.4.4.png, id=249, 1927.2pt x 1159.33125pt>
 File: 11.4.4.png Graphic file (type png)
 <use 11.4.4.png>
-Package pdftex.def Info: 11.4.4.png  used on input line 641.
+Package pdftex.def Info: 11.4.4.png  used on input line 639.
 (pdftex.def)             Requested size: 169.0519pt x 101.68181pt.
 
 
@@ -570,7 +565,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,12n,80p,480b,1081s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Lab Report 4.pdf" (16 pages, 161517995 bytes).
+Output written on "Lab Report 4.pdf" (16 pages, 161517940 bytes).
 PDF statistics:
  349 PDF objects out of 1000 (max. 8388607)
  264 compressed objects within 3 object streams
