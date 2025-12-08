@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  8 DEC 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,77 +384,80 @@ Package pdftex.def Info: schematic.png  used on input line 93.
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 147--153
-
- []
-
+<setup.png, id=64, 5730.40875pt x 4298.0575pt>
+File: setup.png Graphic file (type png)
+<use setup.png>
+Package pdftex.def Info: setup.png  used on input line 156.
+(pdftex.def)             Requested size: 207.0021pt x 155.23494pt.
 
 
 [3 <./schematic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 165--169
+Underfull \hbox (badness 10000) in paragraph at lines 173--177
 
  []
 
-<ltspice.png, id=79, 1001.7425pt x 398.48875pt>
+<ltspice.png, id=80, 1001.7425pt x 398.48875pt>
 File: ltspice.png Graphic file (type png)
 <use ltspice.png>
-Package pdftex.def Info: ltspice.png  used on input line 175.
+Package pdftex.def Info: ltspice.png  used on input line 183.
 (pdftex.def)             Requested size: 276.00105pt x 109.78844pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--196
+
+[4 <./setup.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--205
 
  []
 
-<square_wave.png, id=82, 707.64375pt x 411.5375pt>
+<square_wave.png, id=90, 707.64375pt x 411.5375pt>
 File: square_wave.png Graphic file (type png)
 <use square_wave.png>
-Package pdftex.def Info: square_wave.png  used on input line 200.
+Package pdftex.def Info: square_wave.png  used on input line 209.
 (pdftex.def)             Requested size: 110.40253pt x 64.2021pt.
-<triangle_wave.png, id=83, 716.6775pt x 411.5375pt>
+<triangle_wave.png, id=91, 716.6775pt x 411.5375pt>
 File: triangle_wave.png Graphic file (type png)
 <use triangle_wave.png>
-Package pdftex.def Info: triangle_wave.png  used on input line 206.
+Package pdftex.def Info: triangle_wave.png  used on input line 215.
 (pdftex.def)             Requested size: 110.40253pt x 63.39203pt.
-<sine_wave.png, id=84, 707.64375pt x 410.53375pt>
+<sine_wave.png, id=92, 707.64375pt x 410.53375pt>
 File: sine_wave.png Graphic file (type png)
 <use sine_wave.png>
-Package pdftex.def Info: sine_wave.png  used on input line 212.
+Package pdftex.def Info: sine_wave.png  used on input line 221.
 (pdftex.def)             Requested size: 110.40253pt x 64.0455pt.
-
-
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ltspice.png>]
-<fft_mag.png, id=96, 491.8375pt x 341.275pt>
+<fft_mag.png, id=95, 491.8375pt x 341.275pt>
 File: fft_mag.png Graphic file (type png)
 <use fft_mag.png>
-Package pdftex.def Info: fft_mag.png  used on input line 229.
+Package pdftex.def Info: fft_mag.png  used on input line 238.
 (pdftex.def)             Requested size: 241.49895pt x 167.5699pt.
-<sine_fit.png, id=98, 808.01875pt x 391.4625pt>
+
+
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ltspice.png> <./square_wave.png> <./triangle_wave.png> <./sine_wave.png>]
+<sine_fit.png, id=106, 808.01875pt x 391.4625pt>
 File: sine_fit.png Graphic file (type png)
 <use sine_fit.png>
-Package pdftex.def Info: sine_fit.png  used on input line 242.
+Package pdftex.def Info: sine_fit.png  used on input line 251.
 (pdftex.def)             Requested size: 258.75pt x 125.35417pt.
 
-
-[5 <./square_wave.png> <./triangle_wave.png> <./sine_wave.png> <./fft_mag.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 268--279
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--296
+Underfull \hbox (badness 10000) in paragraph at lines 277--288
 
  []
 
 
 
-[6 <./sine_fit.png>] (./final project.bbl)
+[6 <./fft_mag.png> <./sine_fit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--296
 
-[7] (./final project.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--305
+
+ []
+
+(./final project.bbl
+
+[7])
+
+[8] (./final project.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -463,18 +466,18 @@ Package rerunfilecheck Info: File `"final project".out' has not changed.
 (rerunfilecheck)             Checksum: 7D9CEB73645C63B65A2DC45FD16E56CC;585.
  ) 
 Here is how much of TeX's memory you used:
- 14727 strings out of 473190
- 294389 string characters out of 5715801
- 661104 words of memory out of 5000000
- 37819 multiletter control sequences out of 15000+600000
+ 14737 strings out of 473190
+ 294533 string characters out of 5715801
+ 661315 words of memory out of 5000000
+ 37827 multiletter control sequences out of 15000+600000
  565738 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,80p,638b,1023s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,80p,638b,1141s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "final project.pdf" (7 pages, 931135 bytes).
+Output written on "final project.pdf" (8 pages, 35896993 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

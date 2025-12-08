@@ -149,7 +149,15 @@ supply from a PB-505A set at $\pm18$ V. We used three AD711 op-amps, but any gen
 op-amp should work. We observed the output waveforms using a Tektronix TBS10000C 2-Channel 
 Oscilloscope and used the \texttt{Measure} function to record the amplitude, frequency, 
 and rise/fall timesand duty cycle for the square wave. For the triangle wave, 
-we visually checked for linearity and symmetry.\\
+we visually checked for linearity and symmetry.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\textwidth]{setup.png}
+    \caption{Reference photo of physical setup of the circuit powered by the PB-505A at $\pm18$ V and
+    connections to measure the triangle and sine waveforms simultaneously via clips and BNC cables.}
+    \label{fig:setup}
+\end{figure}
 
 \noindent To evaluate the frequency content of the sine wave, we performed a Fast
 Fourier Transform (FFT) on the waveform data using Python. We processed the data
@@ -177,6 +185,7 @@ the expected waveform behavior (see Figure~\ref{fig:ltspice}).
     of the function generator circuit.}
     \label{fig:ltspice}
 \end{figure}
+
 
 
 \subsection{Results}
@@ -233,7 +242,7 @@ shaping performance \cite{williams}. The FFT magnitude spectrum is shown in Figu
 
 \noindent We used a nonlinear least-squares fit to the sine output to get the
 following parameters: $A=25.02$ V, $=58.16$ Hz, $\phi=-0.014$ rad, and $V_0=4.62$ V.
-The computed RMS voltage of $17.69$ V was close to the measured $17.25$ V, confirms the
+The computed RMS voltage of $17.69$ V was close to the measured $17.25$ V, which confirms the
 waveform's sinusoidal nature. Figure~\ref{fig:sine_fit} shows the original waveform
 and fit.
 
