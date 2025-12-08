@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex final project"] 1765222145.12532 "final project.aux" "final project.bbl" "final project" 1765222191.78561 0
+["bibtex final project"] 1765222515.7095 "final project.aux" "final project.bbl" "final project" 1765222518.81538 0
   "./refs.bib" 1765163931.20705 5344 3abb42cf2c18add6ddeff7f6f1009687 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "final project.aux" 1765222191.60015 5236 2bb32175cb1a9e659ce7b52a65c0d86b "pdflatex"
+  "final project.aux" 1765222518.62116 5236 2bb32175cb1a9e659ce7b52a65c0d86b "pdflatex"
   (generated)
   "final project.bbl"
   "final project.blg"
   (rewritten before read)
-["pdflatex"] 1765222188.74874 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" "final project.pdf" "final project" 1765222191.78573 0
-  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" 1765222185.82155 15620 a727d09d4c1adb84fbb692d3f4411d57 ""
+["pdflatex"] 1765222515.80218 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" "final project.pdf" "final project" 1765222518.81548 0
+  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" 1765222514.03224 15621 6054309480e4f264df4f4630eec43366 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -108,10 +108,10 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "block.jpg" 1765149915 281579 eb44e19d901dbba33d0aff5bc74346b6 ""
   "fft_mag.png" 1765152988.02497 24540 085a6f1fa99daceb62b79a468dbffa74 ""
-  "final project.aux" 1765222191.60015 5236 2bb32175cb1a9e659ce7b52a65c0d86b "pdflatex"
-  "final project.bbl" 1765222145.2348 1413 e41a262458e025c3819c96327f6588a4 "bibtex final project"
-  "final project.out" 1765222191.60078 585 7d9ceb73645c63b65a2dc45fd16e56cc "pdflatex"
-  "final project.tex" 1765222185.82155 15620 a727d09d4c1adb84fbb692d3f4411d57 ""
+  "final project.aux" 1765222518.62116 5236 2bb32175cb1a9e659ce7b52a65c0d86b "pdflatex"
+  "final project.bbl" 1765222515.80012 1413 e41a262458e025c3819c96327f6588a4 "bibtex final project"
+  "final project.out" 1765222518.62176 585 7d9ceb73645c63b65a2dc45fd16e56cc "pdflatex"
+  "final project.tex" 1765222514.03224 15621 6054309480e4f264df4f4630eec43366 ""
   "ltspice.png" 1765151419.28548 133462 81c80e3bd394900043a1c68cd5ef0adc ""
   "schematic.png" 1765148325.05923 520912 6d80aa9a3eedde150ac424f32f835d87 ""
   "setup.png" 1765221153.01179 17406994 7c4d8420208b05b658f95f410194e4f8 ""
