@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex final project"] 1765164021.92023 "final project.aux" "final project.bbl" "final project" 1765164064.25929 0
+["bibtex final project"] 1765164021.92023 "final project.aux" "final project.bbl" "final project" 1765164485.3526 0
   "./refs.bib" 1765163931.20705 5344 3abb42cf2c18add6ddeff7f6f1009687 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "final project.aux" 1765164064.03427 4697 005b4349399c3fb91d47ae3e373421cf "pdflatex"
+  "final project.aux" 1765164485.15288 4697 005b4349399c3fb91d47ae3e373421cf "pdflatex"
   (generated)
   "final project.bbl"
   "final project.blg"
   (rewritten before read)
-["pdflatex"] 1765164063.0298 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" "final project.pdf" "final project" 1765164064.25944 0
-  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" 1765164061.69072 15216 669e6ed0204e30dbeb078968975f8166 ""
+["pdflatex"] 1765164484.03644 "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" "final project.pdf" "final project" 1765164485.35272 0
+  "/Users/lilynguyen/Downloads/UT Fa25/PHY-338k/Final Project/Writeup/final project.tex" 1765164483.6478 15291 9ab12afdbf79f27feb843adbfc685e93 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -108,10 +108,10 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "block.jpg" 1765149915 281579 eb44e19d901dbba33d0aff5bc74346b6 ""
   "fft_mag.png" 1765152988.02497 24540 085a6f1fa99daceb62b79a468dbffa74 ""
-  "final project.aux" 1765164064.03427 4697 005b4349399c3fb91d47ae3e373421cf "pdflatex"
+  "final project.aux" 1765164485.15288 4697 005b4349399c3fb91d47ae3e373421cf "pdflatex"
   "final project.bbl" 1765164022.00872 1413 e41a262458e025c3819c96327f6588a4 "bibtex final project"
-  "final project.out" 1765164064.03519 585 7d9ceb73645c63b65a2dc45fd16e56cc "pdflatex"
-  "final project.tex" 1765164061.69072 15216 669e6ed0204e30dbeb078968975f8166 ""
+  "final project.out" 1765164485.15365 585 7d9ceb73645c63b65a2dc45fd16e56cc "pdflatex"
+  "final project.tex" 1765164483.6478 15291 9ab12afdbf79f27feb843adbfc685e93 ""
   "ltspice.png" 1765151419.28548 133462 81c80e3bd394900043a1c68cd5ef0adc ""
   "schematic.png" 1765148325.05923 520912 6d80aa9a3eedde150ac424f32f835d87 ""
   "sine_fit.png" 1765155441.96772 47509 efdc853e9eef46fe75e1f557abdd3579 ""

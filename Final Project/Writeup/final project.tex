@@ -145,11 +145,11 @@ which measures how much of the distortion is due to harmonics in the signal:
 
 
 We built the circuit from Figure~\ref{fig:schematic} on a solderless breadboard powered using the
-supply from a PB-505A set at $\pm18$ V. We observed the output waveforms using
-a Tektronix TBS10000C 2-Channel Oscilloscope and used the
-\texttt{Measure} function to record the amplitude, frequency, and rise/fall times
-and duty cycle for the square wave. For the triangle wave, we visually checked
-for linearity and symmetry.\\
+supply from a PB-505A set at $\pm18$ V. We used three AD711 op-amps, but any general purpose
+op-amp should work. We observed the output waveforms using a Tektronix TBS10000C 2-Channel 
+Oscilloscope and used the \texttt{Measure} function to record the amplitude, frequency, 
+and rise/fall timesand duty cycle for the square wave. For the triangle wave, 
+we visually checked for linearity and symmetry.\\
 
 \noindent To evaluate the frequency content of the sine wave, we performed a Fast
 Fourier Transform (FFT) on the waveform data using Python. We processed the data
