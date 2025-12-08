@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{bounchaleun}
+Anna Bounchaleun.
+\newblock An elementary introduction to fast fourier transform algorithms.
+\newblock 2019.
+
+\bibitem{eeeguide}
+{EEE Guide}.
+\newblock Triangular wave generator using op amp, 2016.
+\newblock Accessed: 2025-12-07.
+
+\bibitem{elliott}
+Rod Elliott.
+\newblock Sinewave oscillators - characteristics, topologies, and examples, 2010.
+\newblock Accessed: 2025-12-07.
+
+\bibitem{fallows}
+Daniel Fallows, Stefano Nuzzo, Alessandro Costabeber, and Michael Galea.
+\newblock Harmonic reduction methods for electrical generation: a review.
+\newblock {\em IET Generation, Transmission \& Distribution}, 12(13):3107--3113, 2018.
+
+\bibitem{heinzen}
+Daniel Heinzen.
+\newblock Digital oscilloscopes, signal processing, and spectrum analysis, v.i., 2025.
+\newblock Physics 338K, Fall 2025.
+
+\bibitem{schertz}
+Paul Scherz and Simon Monk.
+\newblock {\em Practical Electronics for Inventors, Fourth Edition}.
+\newblock McGraw-Hill, 2016.
+
+\bibitem{seddik}
+Mohamed~S. Seddik, Magdy~B. Eteiba, and Jehan Shazly.
+\newblock Evaluating the harmonic effects on the thermal performance of a power transformer.
+\newblock {\em Energies}, 17(19), 2024.
+
+\bibitem{williams}
+David Williams.
+\newblock Understanding, calculating, and measuring total harmonic distortion (thd).
+\newblock {\em All About Circuits}, February 2017.
+\newblock Accessed: 2025-12-07.
+
+\end{thebibliography}
